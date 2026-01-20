@@ -66,7 +66,7 @@
 .activeNav {
   color: #ff6600;
   border: 1px solid #ff6600;
-  padding: 8px 16px;
+  padding: 8px 16px !important;
   font-family: 'Mukta', sans-serif;
   font-weight: 500;
   background: #fff;
