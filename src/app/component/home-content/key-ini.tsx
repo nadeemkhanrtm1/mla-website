@@ -362,10 +362,10 @@ const initiatives = [
 
 const KeyIntui = () => {
   return (
-    <section id="initiatives" className="py-20 md:py-28 bg-background">
+    <section id="initiatives" className="py-20 md:py-28 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 bg-accent/10 text-accent font-semibold rounded-full text-sm mb-4">
+          <span className="inline-block text-[#f60] bg-[rgba(255,102,0,0.1)] px-4 py-2 font-semibold rounded-full text-sm mb-4">
             Our Work
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
