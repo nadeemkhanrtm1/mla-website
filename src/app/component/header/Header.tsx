@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -12,13 +13,13 @@ const Header = () => {
           <span className={styles.logoText}>MLA Office</span>
         </div>
         <nav className={styles.nav}>
-          <a className={styles.activeNav} href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">News</a>
-          <a href="#">Interviews & Articles</a>
-          <a href="#">Team Members</a>
-          <a href="#">Gallery</a>
-          <a href="#">Contact Us</a>
+          <Link href="/" className={styles.activeNav}>Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/news">News</Link>
+          <Link href="/interviews">Interviews & Articles</Link>
+          <Link href="/team">Team Members</Link>
+          <Link href="/gallery">Gallery</Link>
+          <Link href="/contact">Contact Us</Link>
         </nav>
         <button className={styles.joinBtn}>Join Now</button>
       </div>

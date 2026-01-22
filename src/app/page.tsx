@@ -13,11 +13,11 @@ export default function App() {
       <HeroContent />
       <SecondartContent />
       <AboutContent />
-      <News/>
+      <News />
       <KeyIntui />
       <Gallery />
       <JoinTheMoment />
-      <Form/>
+      <Form />
     </>
   );
 }
