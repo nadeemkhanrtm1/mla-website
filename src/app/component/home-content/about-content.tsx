@@ -13,9 +13,11 @@ const AboutContent = () => {
             <span className="text-gradient">Constituency</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Our mission is clear — to build a prosperous, healthy, and empowered
-            community through dedicated public service and transparent
-            governance.
+            Our vision is to create a developed, self-reliant, and inclusive
+            Pursurah, where every citizen has access to opportunities, safety,
+            and a dignified quality of life. Through effective governance,
+            community engagement, and development-oriented policies, we aim to
+            ensure that progress reaches every household
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -54,8 +56,8 @@ const AboutContent = () => {
               Development for All
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Better roads, clean water, reliable electricity, and modern
-              infrastructure for every community.
+              Focused on improving roads, housing, water supply, sanitation, and
+              basic civic amenities across urban and rural areas.
             </p>
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
@@ -86,8 +88,8 @@ const AboutContent = () => {
               Youth &amp; Education
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Skill development programs, job opportunities, and quality
-              education for the next generation.
+              Empowering youth through education support, sports initiatives,
+              skill development programs, and employment opportunities.
             </p>
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
@@ -116,8 +118,8 @@ const AboutContent = () => {
               Welfare &amp; Healthcare
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Improved hospitals, medical camps, and support for women, senior
-              citizens &amp; families.
+              Strengthening healthcare access, social security schemes, women
+              welfare programs, and support for senior citizens.
             </p>
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
