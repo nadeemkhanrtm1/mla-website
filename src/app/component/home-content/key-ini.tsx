@@ -19,49 +19,49 @@ const initiatives = [
         <path
           d="M21 39.6673V18.6673C21 18.0485 21.2458 17.455 21.6834 17.0174C22.121 16.5798 22.7145 16.334 23.3333 16.334H32.6667C33.2855 16.334 33.879 16.5798 34.3166 17.0174C34.7542 17.455 35 18.0485 35 18.6673V39.6673H21Z"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M20.9997 28H18.6663C18.0475 28 17.454 28.2458 17.0164 28.6834C16.5788 29.121 16.333 29.7145 16.333 30.3333V37.3333C16.333 37.9522 16.5788 38.5457 17.0164 38.9832C17.454 39.4208 18.0475 39.6667 18.6663 39.6667H20.9997"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M35 24.5H37.3333C37.9522 24.5 38.5457 24.7458 38.9832 25.1834C39.4208 25.621 39.6667 26.2145 39.6667 26.8333V37.3333C39.6667 37.9522 39.4208 38.5457 38.9832 38.9832C38.5457 39.4208 37.9522 39.6667 37.3333 39.6667H35"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 21H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 25.666H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 30.334H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 35H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
@@ -85,49 +85,49 @@ const initiatives = [
         <path
           d="M21 39.6673V18.6673C21 18.0485 21.2458 17.455 21.6834 17.0174C22.121 16.5798 22.7145 16.334 23.3333 16.334H32.6667C33.2855 16.334 33.879 16.5798 34.3166 17.0174C34.7542 17.455 35 18.0485 35 18.6673V39.6673H21Z"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M20.9997 28H18.6663C18.0475 28 17.454 28.2458 17.0164 28.6834C16.5788 29.121 16.333 29.7145 16.333 30.3333V37.3333C16.333 37.9522 16.5788 38.5457 17.0164 38.9832C17.454 39.4208 18.0475 39.6667 18.6663 39.6667H20.9997"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M35 24.5H37.3333C37.9522 24.5 38.5457 24.7458 38.9832 25.1834C39.4208 25.621 39.6667 26.2145 39.6667 26.8333V37.3333C39.6667 37.9522 39.4208 38.5457 38.9832 38.9832C38.5457 39.4208 37.9522 39.6667 37.3333 39.6667H35"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 21H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 25.666H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 30.334H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 35H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
@@ -151,49 +151,49 @@ const initiatives = [
         <path
           d="M21 39.6673V18.6673C21 18.0485 21.2458 17.455 21.6834 17.0174C22.121 16.5798 22.7145 16.334 23.3333 16.334H32.6667C33.2855 16.334 33.879 16.5798 34.3166 17.0174C34.7542 17.455 35 18.0485 35 18.6673V39.6673H21Z"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M20.9997 28H18.6663C18.0475 28 17.454 28.2458 17.0164 28.6834C16.5788 29.121 16.333 29.7145 16.333 30.3333V37.3333C16.333 37.9522 16.5788 38.5457 17.0164 38.9832C17.454 39.4208 18.0475 39.6667 18.6663 39.6667H20.9997"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M35 24.5H37.3333C37.9522 24.5 38.5457 24.7458 38.9832 25.1834C39.4208 25.621 39.6667 26.2145 39.6667 26.8333V37.3333C39.6667 37.9522 39.4208 38.5457 38.9832 38.9832C38.5457 39.4208 37.9522 39.6667 37.3333 39.6667H35"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 21H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 25.666H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 30.334H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 35H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
@@ -217,49 +217,49 @@ const initiatives = [
         <path
           d="M21 39.6673V18.6673C21 18.0485 21.2458 17.455 21.6834 17.0174C22.121 16.5798 22.7145 16.334 23.3333 16.334H32.6667C33.2855 16.334 33.879 16.5798 34.3166 17.0174C34.7542 17.455 35 18.0485 35 18.6673V39.6673H21Z"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M20.9997 28H18.6663C18.0475 28 17.454 28.2458 17.0164 28.6834C16.5788 29.121 16.333 29.7145 16.333 30.3333V37.3333C16.333 37.9522 16.5788 38.5457 17.0164 38.9832C17.454 39.4208 18.0475 39.6667 18.6663 39.6667H20.9997"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M35 24.5H37.3333C37.9522 24.5 38.5457 24.7458 38.9832 25.1834C39.4208 25.621 39.6667 26.2145 39.6667 26.8333V37.3333C39.6667 37.9522 39.4208 38.5457 38.9832 38.9832C38.5457 39.4208 37.9522 39.6667 37.3333 39.6667H35"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 21H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 25.666H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 30.334H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 35H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
@@ -309,49 +309,49 @@ const initiatives = [
         <path
           d="M21 39.6673V18.6673C21 18.0485 21.2458 17.455 21.6834 17.0174C22.121 16.5798 22.7145 16.334 23.3333 16.334H32.6667C33.2855 16.334 33.879 16.5798 34.3166 17.0174C34.7542 17.455 35 18.0485 35 18.6673V39.6673H21Z"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M20.9997 28H18.6663C18.0475 28 17.454 28.2458 17.0164 28.6834C16.5788 29.121 16.333 29.7145 16.333 30.3333V37.3333C16.333 37.9522 16.5788 38.5457 17.0164 38.9832C17.454 39.4208 18.0475 39.6667 18.6663 39.6667H20.9997"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M35 24.5H37.3333C37.9522 24.5 38.5457 24.7458 38.9832 25.1834C39.4208 25.621 39.6667 26.2145 39.6667 26.8333V37.3333C39.6667 37.9522 39.4208 38.5457 38.9832 38.9832C38.5457 39.4208 37.9522 39.6667 37.3333 39.6667H35"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 21H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 25.666H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 30.334H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M25.667 35H30.3337"
           stroke="#FF6600"
-          stroke-width="2.33333"
+          strokeWidth="2.33333"
           stroke-linecap="round"
           stroke-linejoin="round"
         />

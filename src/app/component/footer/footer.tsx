@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
               <div>
                 <span className="font-heading font-bold text-xl block">
-                  Shri Rajesh Kumar
+                  Shri Susanta Ghosh
                 </span>
                 <span className="text-background/70 text-sm">
                   MLA, Vidhan Sabha Constituency
@@ -39,7 +39,7 @@ const Footer = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   className="lucide lucide-facebook w-5 h-5"
@@ -59,7 +59,7 @@ const Footer = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   className="lucide lucide-twitter w-5 h-5"
@@ -79,7 +79,7 @@ const Footer = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   className="lucide lucide-instagram w-5 h-5"
@@ -101,7 +101,7 @@ const Footer = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
+                  strokeWidth="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   className="lucide lucide-youtube w-5 h-5"
@@ -168,11 +168,10 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-lg mb-6">Contact</h4>
             <ul className="space-y-3 text-background/70">
-              <li>MLA Office, Main Road</li>
-              <li>Vidhan Sabha Constituency</li>
-              <li>State - 123456</li>
-              <li className="pt-2">+91 98765 43210</li>
-              <li>mla.rajeshkumar@gov.in</li>
+              <li>Khanakul, Hooghly District,</li>
+              <li>West Bengal, India</li>
+              <li className="pt-2">+91 7063762957</li>
+              <li>contact@susantaghosh.com</li>
             </ul>
           </div>
         </div>
