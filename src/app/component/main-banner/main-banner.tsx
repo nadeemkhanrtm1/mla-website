@@ -11,11 +11,11 @@ const MainBanner = ({
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex flex-col justify-start items-center gap-4">
             <div className="self-stretch flex flex-col justify-start items-center gap-2">
-              <div className="self-stretch text-center justify-center text-white text-5xl font-semibold">
+              <div className="text-background text-[44px] leading-15 open-sans-semibold-normal">
                 {bannerTitle}
               </div>
             </div>
-            <div className="text-center justify-start text-white text-xl font-medium leading-7">
+            <div className="text-lg text-muted-foreground mukta-regular text-white">
               {subTitle}
             </div>
           </div>
