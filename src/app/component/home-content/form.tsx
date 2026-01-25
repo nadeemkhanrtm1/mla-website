@@ -6,7 +6,6 @@ import UnhoveredX from "@/assets/unhovered_x.svg";
 import UnhoveredUTube from "@/assets/unhovered_youtube.svg";
 import UnhoveredWhatsapp from "@/assets/unhovered_whatsapp.svg";
 import UnhoveredIg from "@/assets/unhovered_ig.svg";
-
 import HoveredFb from "@/assets/hovered_fb.svg";
 import HoveredX from "@/assets/hovered_x.svg";
 import HoveredUTube from "@/assets/hovered_youtube.svg";
