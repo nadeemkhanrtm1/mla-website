@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutContent = () => {
   return (
-    <section id="vision" className="py-20 md:py-28 bg-muted">
+    <section id="vision" className="py-25 md:py-28 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm mb-4">

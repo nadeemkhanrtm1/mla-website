@@ -2,10 +2,12 @@ const SecondartContent = () => {
   return (
     <section id="about" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="relative animate-slide-in-left">
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated">
-              <div className="absolute inset-0 bg-gradient-saffron opacity-20"></div>
+        <div className="grid lg:grid-cols-[38%_43%] gap-17 items-center">
+          <div
+            className="relative animate-slide-in-left"
+            style={{ width: "490px", height: "570px" }}
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
                 src="/mla-shri-rajesh-kumar.jpg"
                 alt="MLA Shri Rajesh Kumar"
@@ -13,21 +15,31 @@ const SecondartContent = () => {
               />
             </div>
             <div className="absolute -bottom-4 -right-4 w-full h-full border-4 border-primary rounded-2xl -z-10"></div>
-            <div className="absolute -bottom-12 left-1/2 w-34 h-18 text-center rounded-lg" style={{ transform: 'translateX(-50%)', boxShadow: '0px 10px 40px 0px #0000001A' }}>
+            <div
+              className="absolute -bottom-12 left-1/2 w-34 h-18 text-center rounded-lg"
+              style={{
+                transform: "translateX(-50%)",
+                boxShadow: "0px 10px 40px 0px #0000001A",
+              }}
+            >
               <div className="flex flex-col bg-white rounded-lg p-2.5">
-                <span className="text-sm text-[#364153CC] leading-5">Serving Since</span>
-                <span className="text-xl leading-7 font-semibold text-gradient">Khanakul</span>
+                <span className="text-sm text-[#364153CC] leading-5">
+                  Serving Since
+                </span>
+                <span className="text-xl leading-7 font-semibold text-gradient">
+                  Khanakul
+                </span>
               </div>
             </div>
           </div>
           <div className="animate-fade-in-up">
-            <span className="inline-block px-4 py-2 bg-saffron-light text-primary font-semibold rounded-full text-sm mb-4">
+            <span className="inline-block px-4 py-2 bg-saffron-light text-primary rounded-full text-sm mb-4 mukta-medium">
               About Your MLA
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+            <h2 className="text-foreground mb-6 open-sans-semibold-normal text-[44px] leading-12">
               About <span className="text-gradient">Shri Susanta Ghosh</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            <p className="text-lg text-muted-foreground mb-6 mukta-regular">
               Susanta Ghosh is a dedicated public leader and the elected Member
               of the Legislative Assembly from Khanakul. Deeply rooted in the
               constituency, he represents a brand of leadership that believes in
