@@ -1,20 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
-import {
-  Calendar,
-  ArrowRight,
-  Search,
-  Filter,
-  Clock,
-  User,
-  Tag,
-  ChevronRight,
-} from "lucide-react";
+import { useState } from "react";
+import { ArrowRight, Search, Filter } from "lucide-react";
 import MainBanner from "../component/main-banner/main-banner";
 import { Input } from "../component/ui/Input";
 import { Button } from "../component/ui/Button";
 import Image from "next/image";
+import Link from "next/link";
 const categories = [
   "All",
   "Development",
@@ -37,6 +29,8 @@ const allNews = [
     author: "",
     image: "/news_updates_ar_1.png",
     featured: true,
+    navigation:
+      "/news/celebrating-education-legacy-at-balai-chak-high-school-chingra",
   },
   {
     id: 2,
@@ -49,6 +43,8 @@ const allNews = [
     author: "",
     image: "/news_updates_ar_2.png",
     featured: true,
+    navigation:
+      "/news/honble-prime-minister-narendra-modi-attends-poriborton-sankalpa",
   },
   {
     id: 3,
@@ -61,6 +57,7 @@ const allNews = [
     author: "",
     image: "/news_updates_ar_3.png",
     featured: false,
+    navigation: "/news/run-for-youth-khanakuls-young-energy-on-the-streets",
   },
   {
     id: 4,
@@ -73,6 +70,7 @@ const allNews = [
     author: "",
     image: "/news_updates_ar_4.png",
     featured: false,
+    navigation: "/news/listen-to-peoples-voices-in-khanakul",
   },
   {
     id: 5,
@@ -85,6 +83,7 @@ const allNews = [
     author: "",
     image: "/news_updates_ar_5.png",
     featured: false,
+    navigation: "/news/poriborton-sankalpa-sabha-at-chingra",
   },
 ];
 
@@ -168,7 +167,8 @@ const NewsAndUpdates = () => {
 
             <div className="flex flex-wrap gap-6">
               {featuredNews.map((news) => (
-                <div
+                <Link
+                  href={news.navigation}
                   key={news.id}
                   className="w-102.75 group bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-card transition-all duration-300 cursor-pointer"
                   style={{ borderColor: "#FF6600" }}
@@ -222,7 +222,7 @@ const NewsAndUpdates = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -263,10 +263,11 @@ const NewsAndUpdates = () => {
             <>
               <div className="flex flex-wrap gap-6">
                 {visibleNews.map((news) => (
-                  <div
+                  <Link
                     key={news.id}
                     className="w-102.75 group bg-card rounded-xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-card transition-all duration-300 cursor-pointer"
                     style={{ borderColor: "#FF6600" }}
+                    href={news.navigation}
                   >
                     <div
                       style={{ height: "222px" }}
@@ -317,7 +318,7 @@ const NewsAndUpdates = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
 
