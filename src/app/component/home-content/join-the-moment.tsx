@@ -2,7 +2,7 @@ import React from "react";
 
 const JoinTheMoment = () => {
   return (
-    <section className="py-20 md:py-28 bg-flag-color relative overflow-hidden mb-30">
+    <section className="py-20 md:py-28 bg-flag-color relative overflow-hidden ">
       <div
         className="absolute inset-0 opacity-10" 
       ></div>

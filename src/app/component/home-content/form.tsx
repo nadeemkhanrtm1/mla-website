@@ -43,7 +43,7 @@ const Form = () => {
     console.log("Form submitted:", formData);
   };
   return (
-    <section id="form">
+    <section id="form" className="mt-30">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <span className="inline-block text-[#f60] bg-[rgba(255,102,0,0.1)] px-4 py-2 rounded-full text-sm mb-2 mukta-medium">
           Get in Touch
