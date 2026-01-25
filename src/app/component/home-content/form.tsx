@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Form = () => {
@@ -21,19 +22,18 @@ const Form = () => {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Add your form submission logic here
   };
   return (
     <section id="form">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <span className="inline-block px-4 py-2 bg-saffron-light text-primary font-semibold rounded-full text-sm mb-4">
+        <span className="inline-block text-[#f60] bg-[rgba(255,102,0,0.1)] px-4 py-2 rounded-full text-sm mb-2 mukta-medium">
           Get in Touch
         </span>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+        <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal">
           Contact Shri
           <span className="text-gradient">Susanta Ghosh</span>
         </h2>
-        <p className="text-lg text-muted-foreground">
+        <p className="text-lg text-muted-foreground mukta-regular">
           For suggestions, grievances, or public matters, feel free to connect.
         </p>
       </div>
@@ -44,8 +44,7 @@ const Form = () => {
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+               className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
                 Your Name
               </label>
               <input
@@ -55,7 +54,7 @@ const Form = () => {
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Enter your full Name"
-                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 required
               />
             </div>
@@ -63,8 +62,8 @@ const Form = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+                   className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
+     
                 Your Email
               </label>
               <input
@@ -74,7 +73,7 @@ const Form = () => {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Enter your email"
-                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 required
               />
             </div>
@@ -82,8 +81,7 @@ const Form = () => {
             <div>
               <label
                 htmlFor="phone"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+                    className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
                 Phone Number
               </label>
               <input
@@ -93,7 +91,7 @@ const Form = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Enter your phone number"
-                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 required
               />
             </div>
@@ -101,27 +99,30 @@ const Form = () => {
             <div>
               <label
                 htmlFor="query"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+                  className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
                 Your Query
               </label>
-              <input
-                type="text"
+              <select
                 id="query"
                 name="query"
                 value={formData.query}
                 onChange={handleChange}
-                placeholder="Enter your query"
-                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 required
-              />
+              >
+                <option value="" className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200">Select a query type</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="complaint">Complaint</option>
+                <option value="feedback">Feedback</option>
+                <option value="grievance">Grievance</option>
+                <option value="other">Other</option>
+              </select>
             </div>
 
             <div className="col-span-2">
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
+                 className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
                 Message
               </label>
               <textarea
@@ -131,7 +132,7 @@ const Form = () => {
                 onChange={handleChange}
                 placeholder="Enter your message"
                 rows={4}
-                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
+                className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200 resize-none"
                 required
               ></textarea>
             </div>
@@ -139,14 +140,14 @@ const Form = () => {
             <button
               type="submit"
               className="col-span-2 w-full bg-[#FF6600] text-white py-3 rounded-xl"
-              style={{ background: "#FF6600" }}
+              style={{ background: "#FF6600", marginTop: "24px" }}
             >
               Submit
             </button>
           </form>
         </div>
         <div className="w-2/5">
-          <div className="flex flex-col gap-5 border-b border-[#36415333] mb-6">
+          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6">
             <span className="text-xl flex items-center gap-2 font-normal">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -162,11 +163,12 @@ const Form = () => {
               </svg>{" "}
               Phone:
             </span>
-            <span className="mb-5 text-lg font-normal text-[#364153CC]">
+            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75">
               +91 7063762957
             </span>
           </div>
-          <div className="flex flex-col gap-5 border-b border-[#36415333] mb-6">
+
+          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6">
             <span className="text-xl flex items-center gap-2 font-normal">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -182,12 +184,12 @@ const Form = () => {
               </svg>{" "}
               Whatsapp Number:
             </span>
-            <span className="mb-5 text-lg font-normal text-[#364153CC]">
+            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75">
               +91 7063762957
             </span>
           </div>
 
-          <div className="flex flex-col gap-5 border-b border-[#36415333] mb-6">
+          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6">
             <span className="text-xl flex items-center gap-2 font-normal">
               <svg
                 width="24"
@@ -203,12 +205,12 @@ const Form = () => {
               </svg>{" "}
               Email:
             </span>
-            <span className="mb-5 text-lg font-normal text-[#364153CC]">
+            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75">
               contact@susantaghosh.com
             </span>
           </div>
 
-          <div className="flex flex-col gap-5 border-b border-[#36415333] mb-6">
+          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6">
             <span className="text-xl flex items-center gap-2 font-normal">
               <svg
                 width="24"
@@ -222,8 +224,8 @@ const Form = () => {
                   fill="#1A1A1A"
                 />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M2 18C2 19.886 2 20.828 2.586 21.414C3.172 22 4.114 22 6 22H18C19.886 22 20.828 22 21.414 21.414C22 20.828 22 19.886 22 18V13C22 12.529 22 12.293 21.854 12.146C21.707 12 21.47 12 21 12H3C2.529 12 2.293 12 2.146 12.146C2 12.293 2 12.53 2 13V18ZM7 15C7 14.529 7 14.293 7.146 14.146C7.293 14 7.53 14 8 14H10C10.471 14 10.707 14 10.854 14.146C11 14.293 11 14.529 11 15C11 15.471 11 15.707 10.854 15.854C10.707 16 10.47 16 10 16H8C7.529 16 7.293 16 7.146 15.854C7 15.707 7 15.47 7 15ZM7.146 18.146C7 18.293 7 18.53 7 19C7 19.47 7 19.707 7.146 19.854C7.293 20 7.53 20 8 20H10C10.471 20 10.707 20 10.854 19.854C11 19.707 11 19.47 11 19C11 18.53 11 18.293 10.854 18.146C10.707 18 10.47 18 10 18H8C7.529 18 7.293 18 7.146 18.146ZM13 15C13 14.529 13 14.293 13.146 14.146C13.293 14 13.53 14 14 14H16C16.471 14 16.707 14 16.854 14.146C17 14.293 17 14.529 17 15C17 15.471 17 15.707 16.854 15.854C16.707 16 16.47 16 16 16H14C13.529 16 13.293 16 13.146 15.854C13 15.707 13 15.47 13 15ZM13.146 18.146C13 18.293 13 18.53 13 19C13 19.47 13 19.707 13.146 19.854C13.293 20 13.529 20 14 20H16C16.471 20 16.707 20 16.854 19.854C17 19.707 17 19.47 17 19C17 18.53 17 18.293 16.854 18.146C16.707 18 16.47 18 16 18H14C13.529 18 13.293 18 13.146 18.146Z"
                   fill="#1A1A1A"
                 />
@@ -231,126 +233,144 @@ const Form = () => {
                   d="M7 3V6M17 3V6"
                   stroke="#1A1A1A"
                   strokeWidth="2"
-                  stroke-linecap="round"
+                  strokeLinecap="round"
                 />
               </svg>{" "}
               Opening Hours:
             </span>
-            <span className="mb-5 text-lg font-normal text-[#364153CC]">
+            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75">
               Monday – Saturday: 10:00 AM – 6:00 PM
             </span>
           </div>
 
           <div className="mt-12 flex gap-4 items-start justify-start">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <Link
+              href="https://www.facebook.com/SusantaGhoshBJP"
+              target="_blank"
             >
-              <rect width="40" height="40" rx="20" stroke="#364153" />
-              <path
-                d="M25.0007 11.666H22.5007C21.3956 11.666 20.3358 12.105 19.5544 12.8864C18.773 13.6678 18.334 14.7276 18.334 15.8327V18.3327H15.834V21.666H18.334V28.3327H21.6673V21.666H24.1673L25.0007 18.3327H21.6673V15.8327C21.6673 15.6117 21.7551 15.3997 21.9114 15.2434C22.0677 15.0871 22.2796 14.9993 22.5007 14.9993H25.0007V11.666Z"
-                stroke="#364153"
-                strokeWidth="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="hover:scale-110 transition-transform duration-300 cursor-pointer"
+              >
+                <rect width="40" height="40" rx="20" stroke="#364153" />
+                <path
+                  d="M25.0007 11.666H22.5007C21.3956 11.666 20.3358 12.105 19.5544 12.8864C18.773 13.6678 18.334 14.7276 18.334 15.8327V18.3327H15.834V21.666H18.334V28.3327H21.6673V21.666H24.1673L25.0007 18.3327H21.6673V15.8327C21.6673 15.6117 21.7551 15.3997 21.9114 15.2434C22.0677 15.0871 22.2796 14.9993 22.5007 14.9993H25.0007V11.666Z"
+                  stroke="#364153"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-            >
-              <rect
-                x="0.5"
-                y="0.5"
-                width="39"
-                height="39"
-                rx="19.5"
-                stroke="#364153"
-              />
-              <path
-                d="M28.3327 13.3327C28.3327 13.3327 27.7493 15.0827 26.666 16.166C27.9993 24.4994 18.8327 30.5827 11.666 25.8327C13.4993 25.916 15.3327 25.3327 16.666 24.166C12.4993 22.916 10.416 17.9994 12.4993 14.166C14.3327 16.3327 17.166 17.5827 19.9993 17.4994C19.2493 13.9994 23.3327 11.9994 25.8327 14.3327C26.7493 14.3327 28.3327 13.3327 28.3327 13.3327Z"
-                stroke="#364153"
-                strokeWidth="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <Link href="https://x.com/SusantaGhoshBJP" target="_blank">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="39"
+                  height="39"
+                  rx="19.5"
+                  stroke="#364153"
+                />
+                <path
+                  d="M28.3327 13.3327C28.3327 13.3327 27.7493 15.0827 26.666 16.166C27.9993 24.4994 18.8327 30.5827 11.666 25.8327C13.4993 25.916 15.3327 25.3327 16.666 24.166C12.4993 22.916 10.416 17.9994 12.4993 14.166C14.3327 16.3327 17.166 17.5827 19.9993 17.4994C19.2493 13.9994 23.3327 11.9994 25.8327 14.3327C26.7493 14.3327 28.3327 13.3327 28.3327 13.3327Z"
+                  stroke="#364153"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
 
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <Link
+              href="https://www.instagram.com/mr.susantaghosh/"
+              target="_blank"
             >
-              <rect
-                x="0.5"
-                y="0.5"
-                width="39"
-                height="39"
-                rx="19.5"
-                stroke="#364153"
-              />
-              <path
-                d="M24.166 11.666H15.8327C13.5315 11.666 11.666 13.5315 11.666 15.8327V24.166C11.666 26.4672 13.5315 28.3327 15.8327 28.3327H24.166C26.4672 28.3327 28.3327 26.4672 28.3327 24.166V15.8327C28.3327 13.5315 26.4672 11.666 24.166 11.666Z"
-                stroke="#364153"
-                strokeWidth="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M23.3337 19.4753C23.4366 20.1688 23.3181 20.8771 22.9952 21.4994C22.6723 22.1218 22.1614 22.6264 21.5351 22.9416C20.9088 23.2569 20.1991 23.3666 19.5069 23.2552C18.8147 23.1438 18.1752 22.817 17.6794 22.3212C17.1837 21.8255 16.8569 21.186 16.7455 20.4938C16.6341 19.8015 16.7438 19.0918 17.059 18.4656C17.3742 17.8393 17.8789 17.3284 18.5012 17.0055C19.1236 16.6825 19.8319 16.5641 20.5254 16.6669C21.2328 16.7718 21.8878 17.1015 22.3935 17.6072C22.8992 18.1129 23.2288 18.7678 23.3337 19.4753Z"
-                stroke="#364153"
-                strokeWidth="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M24.584 15.416H24.5923"
-                stroke="#364153"
-                strokeWidth="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="39"
+                  height="39"
+                  rx="19.5"
+                  stroke="#364153"
+                />
+                <path
+                  d="M24.166 11.666H15.8327C13.5315 11.666 11.666 13.5315 11.666 15.8327V24.166C11.666 26.4672 13.5315 28.3327 15.8327 28.3327H24.166C26.4672 28.3327 28.3327 26.4672 28.3327 24.166V15.8327C28.3327 13.5315 26.4672 11.666 24.166 11.666Z"
+                  stroke="#364153"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M23.3337 19.4753C23.4366 20.1688 23.3181 20.8771 22.9952 21.4994C22.6723 22.1218 22.1614 22.6264 21.5351 22.9416C20.9088 23.2569 20.1991 23.3666 19.5069 23.2552C18.8147 23.1438 18.1752 22.817 17.6794 22.3212C17.1837 21.8255 16.8569 21.186 16.7455 20.4938C16.6341 19.8015 16.7438 19.0918 17.059 18.4656C17.3742 17.8393 17.8789 17.3284 18.5012 17.0055C19.1236 16.6825 19.8319 16.5641 20.5254 16.6669C21.2328 16.7718 21.8878 17.1015 22.3935 17.6072C22.8992 18.1129 23.2288 18.7678 23.3337 19.4753Z"
+                  stroke="#364153"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M24.584 15.416H24.5923"
+                  stroke="#364153"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
 
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <Link
+              href="https://www.youtube.com/@SusantaGhoshBJP"
+              target="_blank"
             >
-              <rect
-                x="0.5"
-                y="0.5"
-                width="39"
-                height="39"
-                rx="19.5"
-                stroke="#364153"
-              />
-              <path
-                d="M12.0833 24.1667C11.5012 21.4194 11.5012 18.5806 12.0833 15.8333C12.1598 15.5543 12.3076 15.3001 12.5122 15.0955C12.7167 14.8909 12.971 14.7432 13.25 14.6667C17.7195 13.9262 22.2805 13.9262 26.75 14.6667C27.029 14.7432 27.2833 14.8909 27.4878 15.0955C27.6924 15.3001 27.8402 15.5543 27.9167 15.8333C28.4988 18.5806 28.4988 21.4194 27.9167 24.1667C27.8402 24.4457 27.6924 24.6999 27.4878 24.9045C27.2833 25.1091 27.029 25.2568 26.75 25.3333C22.2805 26.0739 17.7195 26.0739 13.25 25.3333C12.971 25.2568 12.7167 25.1091 12.5122 24.9045C12.3076 24.6999 12.1598 24.4457 12.0833 24.1667Z"
-                stroke="#364153"
-                strokeWidth="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M18.333 22.5L22.4997 20L18.333 17.5V22.5Z"
-                stroke="#364153"
-                strokeWidth="1.66667"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="39"
+                  height="39"
+                  rx="19.5"
+                  stroke="#364153"
+                />
+                <path
+                  d="M12.0833 24.1667C11.5012 21.4194 11.5012 18.5806 12.0833 15.8333C12.1598 15.5543 12.3076 15.3001 12.5122 15.0955C12.7167 14.8909 12.971 14.7432 13.25 14.6667C17.7195 13.9262 22.2805 13.9262 26.75 14.6667C27.029 14.7432 27.2833 14.8909 27.4878 15.0955C27.6924 15.3001 27.8402 15.5543 27.9167 15.8333C28.4988 18.5806 28.4988 21.4194 27.9167 24.1667C27.8402 24.4457 27.6924 24.6999 27.4878 24.9045C27.2833 25.1091 27.029 25.2568 26.75 25.3333C22.2805 26.0739 17.7195 26.0739 13.25 25.3333C12.971 25.2568 12.7167 25.1091 12.5122 24.9045C12.3076 24.6999 12.1598 24.4457 12.0833 24.1667Z"
+                  stroke="#364153"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M18.333 22.5L22.4997 20L18.333 17.5V22.5Z"
+                  stroke="#364153"
+                  strokeWidth="1.66667"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
 
             <svg
               width="40"
