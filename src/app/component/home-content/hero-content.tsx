@@ -19,7 +19,7 @@ const HeroContent = () => {
               Rising for the nation
             </span>
 
-            <h1 className="text-5xl max-w-[550px] font-semibold open-sans-semibold-normal mb-4 mt-6">
+            <h1 className="text-5xl max-w-[550px] leading-16 font-semibold open-sans-semibold-normal mb-4 mt-6">
               Rising for the Nation. Fighting for Khanakul.
             </h1>
 
