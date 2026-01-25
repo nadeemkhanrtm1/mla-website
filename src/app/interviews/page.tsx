@@ -1,7 +1,223 @@
-import React from "react";
+import MainBanner from "../component/main-banner/main-banner";
+import Link from "next/link";
+
+const video_interviews = [
+  {
+    id: 1,
+    category: "Youtube",
+    date: "August 1, 2025",
+    title: "MLA Susanta Ghosh’s Vision for Khanakul, Hooghly",
+    duration: "07 mins",
+    youtubeEmbedCode: "mKqnMpVzYoQ",
+  },
+  {
+    id: 2,
+    category: "Youtube",
+    date: "February 13, 2025",
+    title:
+      "MLA Susanta Ghosh Leads Farmers’ Protest for Irrigation Water in Khanakul",
+    duration: "04 mins",
+    youtubeEmbedCode: "KYNTPXd4ZYI",
+  },
+  {
+    id: 3,
+    category: "Youtube",
+    date: "May 6, 2025",
+    title: "Susanta Ghosh Addresses Political Violence and Governance Concerns",
+    duration: "21 mins",
+    youtubeEmbedCode: "zMq87um5CNY",
+  },
+];
+
+const news_article_and_coverage = [
+  {
+    id: 1,
+    category: "Development",
+    title: "Major Drainage Infrastructure Project",
+    content: `Under the leadership of MLA Susanta Ghosh, a major drainage infrastructure project worth approximately ₹27 lakh was implemented in the Arambagh region through the BJP-led Panchayat Samiti.`,
+    newsBy: "Khanakul News",
+    articleLink: "major-drainage-infrastructure-project",
+  },
+  {
+    id: 2,
+    category: "Politics",
+    title:
+      "Youth Marathon Organised to Promote a Drug-Free and Healthy Society",
+    content: `On the occasion of National Youth Day, a large-scale Youth Marathon was organised in Khanakul under the guidance of MLA Susanta Ghosh, with the objective of promoting a drug-free,  community.`,
+    newsBy: "Khanakul News",
+    articleLink:
+      "youth-marathon-organised-to-promote-a-drug-free-and-healthy-society",
+  },
+  {
+    id: 3,
+    category: "Politics",
+    title:
+      "The Central Government’s road connectivity initiative for rural areas",
+    content: `In a significant step toward regional infrastructure development, MLA Susanta Ghosh held discussions with the Union Minister for Road Transport and Highways regarding the improvement of road.`,
+    newsBy: "Khanakul News",
+    articleLink:
+      "central-government-road-connectivity-initiative-for-rural-areas",
+  },
+  {
+    id: 4,
+    category: "Politics",
+    title: "Model Education  and Child Development Centres",
+    content: `A child development and education centre in Khanakul has been upgraded into a model learning institution, focusing on early childhood education, nutrition, and holistic development.`,
+    newsBy: "Khanakul News",
+    articleLink: "model-education-and-child-development-centres",
+  },
+  {
+    id: 5,
+    category: "Politics",
+    title: "BJP Organisational Strength and Victory Celebration",
+    content: `Following the Bharatiya Janata Party’s electoral victory in Delhi, party workers and supporters in Arambagh organised a celebration programme to mark the success and strengthen organisational.`,
+    newsBy: "Khanakul News",
+    articleLink: "bjp-organisational-strength-and-victory-celebration",
+  },
+];
 
 const InterviewAndArticle = () => {
-  return <div>InterviewAndArticle</div>;
+  return (
+    <>
+      <MainBanner
+        bannerTitle="Interviews & Articles"
+        subTitle="Stay updated with the latest interviews, media appearances, press coverage, and articles featuring Shri Susanta Ghosh"
+      />
+      <section className="bg-muted py-15">
+        <div className="container mx-auto flex justify-start items-center gap-3">
+          <div className="w-1 h-8 bg-[#ff6600] rounded-full" />
+          <div className="h-8 justify-center text-[#1a1a1a] text-2xl font-semibold font-['Open_Sans'] leading-8">
+            Video Interviews
+          </div>
+        </div>
+
+        <div className="container mx-auto mt-8 flex flex-wrap gap-6">
+          {video_interviews?.map((video, index) => (
+            <div
+              className="w-[411px] h-[404px] border rounded-xl"
+              style={{ borderColor: "#FF6600" }}
+              key={index}
+            >
+              <iframe
+                height={278}
+                src={`https://www.youtube-nocookie.com/embed/${video.youtubeEmbedCode}`}
+                title="YouTube video player"
+                className="w-full rounded-tl-2xl rounded-tr-2xl"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <div className="flex p-4 flex-col justify-start items-start gap-2.5">
+                <div className="self-stretch flex flex-col justify-start items-start gap-2.5">
+                  <div className="inline-flex justify-start items-center gap-6">
+                    <div className="px-3 py-1.5 bg-[#ff6600]/10 rounded-[19px] flex justify-center items-center gap-2.5">
+                      <div className="text-center justify-center text-[#ff6600] text-xs font-bold font-['Mukta'] leading-4">
+                        {video?.category}
+                      </div>
+                    </div>
+                    <div className="flex justify-start items-center gap-2">
+                      <div className="w-4 h-4 relative">
+                        <div className="w-0 h-[2.67px] left-[5.33px] top-[1.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-[#364153]/80" />
+                        <div className="w-0 h-[2.67px] left-[10.67px] top-[1.33px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-[#364153]/80" />
+                        <div className="w-3 h-3 left-[2px] top-[2.67px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-[#364153]/80" />
+                        <div className="w-3 h-0 left-[2px] top-[6.67px] absolute outline outline-[1.33px] outline-offset-[-0.67px] outline-[#364153]/80" />
+                      </div>
+                      <div className="w-[123.36px] h-5 justify-center text-[#364153]/80 text-sm font-normal font-['Mukta'] leading-5">
+                        {video?.date}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                    <div className="self-stretch justify-center text-[#1a1a1a] text-lg font-bold font-['Open_Sans'] leading-7">
+                      {video?.title}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="my-15 container mx-auto">
+        <div className="flex justify-start items-center gap-3">
+          <div className="w-1 h-8 bg-[#ff6600] rounded-full" />
+          <div className="h-8 justify-center text-[#1a1a1a] text-2xl font-semibold font-['Open_Sans'] leading-8">
+            News Articles & Coverage
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-6 mt-8">
+          {news_article_and_coverage.map((news) => (
+            <Link
+              href={"/interviews/" + news.articleLink}
+              key={news.id}
+              className="w-102.75 group bg-card hover:border-[#FF6600] rounded-xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-card transition-all duration-300 cursor-pointer"
+            >
+              <div className="flex flex-col gap-2.5 p-4">
+                <div className="self-stretch flex flex-col justify-start items-start gap-2.5">
+                  <div className="inline-flex justify-start items-center gap-6">
+                    <div className="px-3 py-1.5 bg-[#ff6600]/10 rounded-[19px] flex justify-center items-center gap-2.5">
+                      <div className="text-center justify-center text-[#ff6600] text-xs font-bold font-['Mukta'] leading-4">
+                        {news.category}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="self-stretch flex flex-col justify-start items-start gap-1">
+                    <div className="self-stretch justify-center text-[#1a1a1a] text-lg font-bold font-['Open_Sans'] leading-7">
+                      {news.title}
+                    </div>
+                    <div className="self-stretch justify-center text-[#364153]/80 text-base font-normal font-['Mukta'] leading-[26px]">
+                      {news.content}
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-start items-end gap-2 mt-6">
+                  <div className="flex items-center gap-2.5 text-center justify-center text-[#ff6600] text-base font-medium font-['Mukta'] leading-6">
+                    {news.newsBy}
+                  </div>
+                </div>
+                <div className="text-center flex items-center justify-center gap-3 mt-8">
+                  <div className="text-center justify-center text-[#ff6600] text-base font-semibold font-['Open_Sans'] leading-5">
+                    Read Full Article
+                  </div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="inline-block "
+                  >
+                    <path
+                      d="M10 2H14V6"
+                      stroke="#FF6600"
+                      stroke-width="1.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.66699 9.33333L14.0003 2"
+                      stroke="#FF6600"
+                      stroke-width="1.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 8.66667V12.6667C12 13.0203 11.8595 13.3594 11.6095 13.6095C11.3594 13.8595 11.0203 14 10.6667 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V5.33333C2 4.97971 2.14048 4.64057 2.39052 4.39052C2.64057 4.14048 2.97971 4 3.33333 4H7.33333"
+                      stroke="#FF6600"
+                      stroke-width="1.33333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </>
+  );
 };
 
 export default InterviewAndArticle;

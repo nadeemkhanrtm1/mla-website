@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const News = () => {
   return (
     <section id="news" className="py-20 md:py-28">
@@ -19,6 +21,7 @@ const News = () => {
               initiatives, public meetings, and important announcements from
               Khanakul
             </div>
+            <Link href="/interviews">
             <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-md px-8 text-base">
               View All News
               <svg
@@ -37,6 +40,7 @@ const News = () => {
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
             </button>
+            </Link>
           </div>
         </div>
 
