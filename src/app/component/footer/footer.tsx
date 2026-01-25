@@ -112,7 +112,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/susanta-ghosh-708514209/"
+                href="https://www.linkedin.com/in/susanta-ghosh-89545a3a4/"
                 aria-label="Linkedin"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               >
