@@ -1,6 +1,18 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
+import UnhoveredFb from "@/assets/unhovered_fb.svg";
+import UnhoveredX from "@/assets/unhovered_x.svg";
+import UnhoveredUTube from "@/assets/unhovered_youtube.svg";
+import UnhoveredWhatsapp from "@/assets/unhovered_whatsapp.svg";
+import UnhoveredIg from "@/assets/unhovered_ig.svg";
+
+import HoveredFb from "@/assets/hovered_fb.svg";
+import HoveredX from "@/assets/hovered_x.svg";
+import HoveredUTube from "@/assets/hovered_youtube.svg";
+import HoveredWhatsapp from "@/assets/hovered_whatsapp.svg";
+import HoveredIg from "@/assets/hovered_ig.svg";
+import Image from "next/image";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +21,14 @@ const Form = () => {
     email: "",
     message: "",
     query: "",
+  });
+
+  const [hovered, setHovered] = useState({
+    fb: false,
+    x: false,
+    youtube: false,
+    whatsapp: false,
+    ig: false,
   });
 
   const handleChange = (e: any) => {
@@ -44,7 +64,8 @@ const Form = () => {
             <div>
               <label
                 htmlFor="name"
-               className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
+                className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
+              >
                 Your Name
               </label>
               <input
@@ -62,8 +83,8 @@ const Form = () => {
             <div>
               <label
                 htmlFor="email"
-                   className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
-     
+                className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
+              >
                 Your Email
               </label>
               <input
@@ -81,7 +102,8 @@ const Form = () => {
             <div>
               <label
                 htmlFor="phone"
-                    className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
+                className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
+              >
                 Phone Number
               </label>
               <input
@@ -99,7 +121,8 @@ const Form = () => {
             <div>
               <label
                 htmlFor="query"
-                  className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
+                className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
+              >
                 Your Query
               </label>
               <select
@@ -110,7 +133,12 @@ const Form = () => {
                 className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 required
               >
-                <option value="" className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200">Select a query type</option>
+                <option
+                  value=""
+                  className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
+                >
+                  Select a query type
+                </option>
                 <option value="suggestion">Suggestion</option>
                 <option value="complaint">Complaint</option>
                 <option value="feedback">Feedback</option>
@@ -122,7 +150,8 @@ const Form = () => {
             <div className="col-span-2">
               <label
                 htmlFor="message"
-                 className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5">
+                className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
+              >
                 Message
               </label>
               <textarea
@@ -247,151 +276,137 @@ const Form = () => {
             <Link
               href="https://www.facebook.com/SusantaGhoshBJP"
               target="_blank"
+              onMouseEnter={() => setHovered((h) => ({ ...h, fb: true }))}
+              onMouseLeave={() => setHovered((h) => ({ ...h, fb: false }))}
             >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="hover:scale-110 transition-transform duration-300 cursor-pointer"
-              >
-                <rect width="40" height="40" rx="20" stroke="#364153" />
-                <path
-                  d="M25.0007 11.666H22.5007C21.3956 11.666 20.3358 12.105 19.5544 12.8864C18.773 13.6678 18.334 14.7276 18.334 15.8327V18.3327H15.834V21.666H18.334V28.3327H21.6673V21.666H24.1673L25.0007 18.3327H21.6673V15.8327C21.6673 15.6117 21.7551 15.3997 21.9114 15.2434C22.0677 15.0871 22.2796 14.9993 22.5007 14.9993H25.0007V11.666Z"
-                  stroke="#364153"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+              {hovered.fb ? (
+                <Image
+                  src={HoveredFb}
+                  alt="Facebook"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
-              </svg>
+              ) : (
+                <Image
+                  src={UnhoveredFb}
+                  alt="Facebook"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
+                />
+              )}
             </Link>
 
-            <Link href="https://x.com/SusantaGhoshBJP" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-              >
-                <rect
-                  x="0.5"
-                  y="0.5"
-                  width="39"
-                  height="39"
-                  rx="19.5"
-                  stroke="#364153"
+            <Link
+              href="https://x.com/SusantaGhoshBJP"
+              target="_blank"
+              onMouseEnter={() => setHovered((h) => ({ ...h, x: true }))}
+              onMouseLeave={() => setHovered((h) => ({ ...h, x: false }))}
+            >
+              {hovered.x ? (
+                <Image
+                  src={HoveredX}
+                  alt="X"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
-                <path
-                  d="M28.3327 13.3327C28.3327 13.3327 27.7493 15.0827 26.666 16.166C27.9993 24.4994 18.8327 30.5827 11.666 25.8327C13.4993 25.916 15.3327 25.3327 16.666 24.166C12.4993 22.916 10.416 17.9994 12.4993 14.166C14.3327 16.3327 17.166 17.5827 19.9993 17.4994C19.2493 13.9994 23.3327 11.9994 25.8327 14.3327C26.7493 14.3327 28.3327 13.3327 28.3327 13.3327Z"
-                  stroke="#364153"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+              ) : (
+                <Image
+                  src={UnhoveredX}
+                  alt="X"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
-              </svg>
+              )}
             </Link>
 
             <Link
               href="https://www.instagram.com/mr.susantaghosh/"
               target="_blank"
+              onMouseEnter={() => setHovered((h) => ({ ...h, ig: true }))}
+              onMouseLeave={() => setHovered((h) => ({ ...h, ig: false }))}
             >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="0.5"
-                  y="0.5"
-                  width="39"
-                  height="39"
-                  rx="19.5"
-                  stroke="#364153"
+              {hovered.ig ? (
+                <Image
+                  src={HoveredIg}
+                  alt="Instagram"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
-                <path
-                  d="M24.166 11.666H15.8327C13.5315 11.666 11.666 13.5315 11.666 15.8327V24.166C11.666 26.4672 13.5315 28.3327 15.8327 28.3327H24.166C26.4672 28.3327 28.3327 26.4672 28.3327 24.166V15.8327C28.3327 13.5315 26.4672 11.666 24.166 11.666Z"
-                  stroke="#364153"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+              ) : (
+                <Image
+                  src={UnhoveredIg}
+                  alt="Instagram"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
-                <path
-                  d="M23.3337 19.4753C23.4366 20.1688 23.3181 20.8771 22.9952 21.4994C22.6723 22.1218 22.1614 22.6264 21.5351 22.9416C20.9088 23.2569 20.1991 23.3666 19.5069 23.2552C18.8147 23.1438 18.1752 22.817 17.6794 22.3212C17.1837 21.8255 16.8569 21.186 16.7455 20.4938C16.6341 19.8015 16.7438 19.0918 17.059 18.4656C17.3742 17.8393 17.8789 17.3284 18.5012 17.0055C19.1236 16.6825 19.8319 16.5641 20.5254 16.6669C21.2328 16.7718 21.8878 17.1015 22.3935 17.6072C22.8992 18.1129 23.2288 18.7678 23.3337 19.4753Z"
-                  stroke="#364153"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M24.584 15.416H24.5923"
-                  stroke="#364153"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              )}
             </Link>
 
             <Link
               href="https://www.youtube.com/@SusantaGhoshBJP"
               target="_blank"
+              onMouseEnter={() => setHovered((h) => ({ ...h, youtube: true }))}
+              onMouseLeave={() => setHovered((h) => ({ ...h, youtube: false }))}
             >
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="0.5"
-                  y="0.5"
-                  width="39"
-                  height="39"
-                  rx="19.5"
-                  stroke="#364153"
+              {hovered.youtube ? (
+                <Image
+                  src={HoveredUTube}
+                  alt="YouTube"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
-                <path
-                  d="M12.0833 24.1667C11.5012 21.4194 11.5012 18.5806 12.0833 15.8333C12.1598 15.5543 12.3076 15.3001 12.5122 15.0955C12.7167 14.8909 12.971 14.7432 13.25 14.6667C17.7195 13.9262 22.2805 13.9262 26.75 14.6667C27.029 14.7432 27.2833 14.8909 27.4878 15.0955C27.6924 15.3001 27.8402 15.5543 27.9167 15.8333C28.4988 18.5806 28.4988 21.4194 27.9167 24.1667C27.8402 24.4457 27.6924 24.6999 27.4878 24.9045C27.2833 25.1091 27.029 25.2568 26.75 25.3333C22.2805 26.0739 17.7195 26.0739 13.25 25.3333C12.971 25.2568 12.7167 25.1091 12.5122 24.9045C12.3076 24.6999 12.1598 24.4457 12.0833 24.1667Z"
-                  stroke="#364153"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+              ) : (
+                <Image
+                  src={UnhoveredUTube}
+                  alt="YouTube"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
                 />
-                <path
-                  d="M18.333 22.5L22.4997 20L18.333 17.5V22.5Z"
-                  stroke="#364153"
-                  strokeWidth="1.66667"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              )}
             </Link>
 
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+            <Link
+              href="https://www.youtube.com/@SusantaGhoshBJP"
+              target="_blank"
+              onMouseEnter={() => setHovered((h) => ({ ...h, whatsapp: true }))}
+              onMouseLeave={() => setHovered((h) => ({ ...h, whatsapp: false }))}
             >
-              <rect
-                x="0.5"
-                y="0.5"
-                width="39"
-                height="39"
-                rx="19.5"
-                stroke="#364153"
-              />
-              <path
-                d="M25.875 14.0915C25.1109 13.32 24.2009 12.7082 23.198 12.2919C22.195 11.8755 21.1193 11.663 20.0334 11.6665C15.4834 11.6665 11.775 15.3749 11.775 19.9249C11.775 21.3832 12.1584 22.7999 12.875 24.0499L11.7084 28.3332L16.0834 27.1832C17.2917 27.8416 18.65 28.1915 20.0334 28.1915C24.5834 28.1915 28.2917 24.4832 28.2917 19.9332C28.2917 17.7249 27.4334 15.6499 25.875 14.0915ZM20.0334 26.7915C18.8 26.7915 17.5917 26.4582 16.5334 25.8332L16.2834 25.6832L13.6834 26.3665L14.375 23.8332L14.2084 23.5749C13.523 22.4808 13.1591 21.2159 13.1584 19.9249C13.1584 16.1415 16.2417 13.0582 20.025 13.0582C21.8584 13.0582 23.5834 13.7749 24.875 15.0749C25.5147 15.7114 26.0216 16.4687 26.3664 17.3027C26.7111 18.1366 26.8869 19.0308 26.8834 19.9332C26.9 23.7165 23.8167 26.7915 20.0334 26.7915ZM23.8 21.6582C23.5917 21.5582 22.575 21.0582 22.3917 20.9832C22.2 20.9165 22.0667 20.8832 21.925 21.0832C21.7834 21.2915 21.3917 21.7582 21.275 21.8916C21.1584 22.0332 21.0334 22.0499 20.825 21.9415C20.6167 21.8415 19.95 21.6166 19.1667 20.9165C18.55 20.3665 18.1417 19.6915 18.0167 19.4832C17.9 19.2749 18 19.1665 18.1084 19.0582C18.2 18.9665 18.3167 18.8165 18.4167 18.6999C18.5167 18.5832 18.5584 18.4915 18.625 18.3582C18.6917 18.2165 18.6584 18.0999 18.6084 17.9999C18.5584 17.8999 18.1417 16.8832 17.975 16.4665C17.8084 16.0665 17.6334 16.1165 17.5084 16.1082H17.1084C16.9667 16.1082 16.75 16.1582 16.5584 16.3665C16.375 16.5749 15.8417 17.0749 15.8417 18.0915C15.8417 19.1082 16.5834 20.0915 16.6834 20.2249C16.7834 20.3666 18.1417 22.4499 20.2084 23.3415C20.7 23.5582 21.0834 23.6832 21.3834 23.7749C21.875 23.9332 22.325 23.9082 22.6834 23.8582C23.0834 23.7999 23.9084 23.3582 24.075 22.8749C24.25 22.3915 24.25 21.9832 24.1917 21.8916C24.1334 21.7999 24.0084 21.7582 23.8 21.6582Z"
-                fill="#364153"
-              />
-            </svg>
+              {hovered.whatsapp ? (
+                <Image
+                  src={HoveredWhatsapp}
+                  alt="Facebook"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
+                />
+              ) : (
+                <Image
+                  src={UnhoveredWhatsapp}
+                  alt="Facebook"
+                  className="w-10 h-10"
+                  width={100}
+                  height={100}
+                  unoptimized
+                />
+              )}
+            </Link>
           </div>
         </div>
       </div>
