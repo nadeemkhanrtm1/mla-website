@@ -25,7 +25,7 @@ const AboutContent = () => {
             className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden"
             style={{ animationDelay: "0s" }}
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:opacity-10 transition-opacity"></div>
+            <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
             <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ const AboutContent = () => {
             className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden"
             style={{ animationDelay: "0.1s" }}
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:opacity-10 transition-opacity"></div>
+            <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
             <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ const AboutContent = () => {
             className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden"
             style={{ animationDelay: "0.2s" }}
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:opacity-10 transition-opacity"></div>
+            <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
             <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
