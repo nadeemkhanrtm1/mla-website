@@ -105,16 +105,21 @@ const Form = () => {
               >
                 Your Query
               </label>
-              <input
-                type="text"
+              <select
                 id="query"
                 name="query"
                 value={formData.query}
                 onChange={handleChange}
-                placeholder="Enter your query"
                 className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                 required
-              />
+              >
+                <option value="">Select a query type</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="complaint">Complaint</option>
+                <option value="feedback">Feedback</option>
+                <option value="grievance">Grievance</option>
+                <option value="other">Other</option>
+              </select>
             </div>
 
             <div className="col-span-2">
