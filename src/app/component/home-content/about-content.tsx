@@ -2,30 +2,28 @@ import React from "react";
 
 const AboutContent = () => {
   return (
-    <section id="vision" className="py-25 md:py-28 bg-muted">
+    <section id="vision" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm mb-4">
+          <span className="inline-block px-4 py-2 bg-primary/10 text-primary mukta-medium rounded-full text-sm mb-4">
             Vision &amp; Mission
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+          <h2 className="text-[44px] leading-15 text-foreground mb-6 open-sans-semibold-normal">
             Vision for a Stronger &amp; Better{" "}
             <span className="text-gradient">Constituency</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground mukta-regular">
             Our vision is to create a developed, self-reliant, and inclusive
             Pursurah, where every citizen has access to opportunities, safety,
-            and a dignified quality of life. Through effective governance,
-            community engagement, and development-oriented policies, we aim to
-            ensure that progress reaches every household
+            and a dignified quality of life.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           <div
-            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden"
+            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer"
             style={{ animationDelay: "0s" }}
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:opacity-10 transition-opacity"></div>
+            <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
             <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,10 +60,10 @@ const AboutContent = () => {
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
           <div
-            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden"
+            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer"
             style={{ animationDelay: "0.1s" }}
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:opacity-10 transition-opacity"></div>
+            <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
             <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,10 +92,10 @@ const AboutContent = () => {
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
           <div
-            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden"
+            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer"
             style={{ animationDelay: "0.2s" }}
           >
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:opacity-10 transition-opacity"></div>
+            <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
             <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
