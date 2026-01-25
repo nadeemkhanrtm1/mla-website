@@ -116,7 +116,7 @@ const NewsAndUpdates = () => {
       />
 
       {/* Filter Bar */}
-      <section className="bg-card border-b border-border sticky top-20 z-30">
+      <section className="bg-card border-b border-border sticky top-0 z-30">
         <div className="container mx-auto px-4 py-4">
           <div className="flex flex-col lg:flex-row gap-4 items-center justify-between">
             {/* Search */}
