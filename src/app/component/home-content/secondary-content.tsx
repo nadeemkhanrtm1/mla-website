@@ -2,10 +2,10 @@ const SecondartContent = () => {
   return (
     <section id="about" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-[38%_43%] gap-17 items-center">
+        <div className="grid gap-10 items-center">
           <div
             className="relative animate-slide-in-left"
-            style={{ width: "490px", height: "570px" }}
+            style={{ width: "530px", height: "602px" }}
           >
             <div className="relative rounded-2xl overflow-hidden shadow-elevated">
               <img
@@ -52,7 +52,7 @@ const SecondartContent = () => {
               accessible, and firmly focused on real issues affecting everyday
               lives.
             </p>
-            <div className="grid sm:grid-cols-3 gap-4">
+            <div className="grid sm:grid-cols-3 gap-4 w-[90%]">
               <div className="flex flex-col items-start">
                 <div className="font-semibold text-5xl leading-12 text-gradient">
                   10+
