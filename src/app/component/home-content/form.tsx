@@ -43,23 +43,23 @@ const Form = () => {
     console.log("Form submitted:", formData);
   };
   return (
-    <section id="form" className="mt-30">
-      <div className="text-center max-w-3xl mx-auto mb-16">
+    <section id="form" className="my-30 my-40px">
+      <div className="text-center max-w-3xl mx-auto mb-16 mb-16px">
         <span className="inline-block text-[#f60] bg-[rgba(255,102,0,0.1)] px-4 py-2 rounded-full text-sm mb-2 mukta-medium">
           Get in Touch
         </span>
-        <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal">
+        <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal text-mobile-32">
           Contact Shri
           <span className="text-gradient">Susanta Ghosh</span>
         </h2>
-        <p className="text-lg text-muted-foreground mukta-regular">
+        <p className="text-lg text-muted-foreground mukta-regular text-16px">
           For suggestions, grievances, or public matters, feel free to connect.
         </p>
       </div>
 
-      <div className="flex gap-24 container mx-auto px-12 mb-30">
-        <div className="bg-muted px-8 py-10 rounded-2xl w-3/5">
-          <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
+      <div className="flex flex-col-reverse lg:flex-row gap-24 gap-40px container mx-auto px-12">
+        <div className="bg-muted px-8 py-10 rounded-2xl w-3/5 w-mobile-100-perc padding-with-radius">
+          <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4 mobile-style-form">
             <div>
               <label
                 htmlFor="name"
@@ -167,16 +167,16 @@ const Form = () => {
 
             <button
               type="submit"
-              className="col-span-2 w-full bg-[#FF6600] text-white py-3 rounded-xl"
+              className="col-span-2 w-full bg-[#FF6600] text-white py-3 rounded-xl margin-top-16px"
               style={{ background: "#FF6600", marginTop: "24px" }}
             >
               Submit
             </button>
           </form>
         </div>
-        <div className="w-2/5">
-          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6">
-            <span className="text-xl flex items-center gap-2 font-normal">
+        <div className="w-2/5 w-mobile-100-perc">
+          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6 mb-16px">
+            <span className="text-xl flex items-center gap-2 font-normal text-18px">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -191,13 +191,13 @@ const Form = () => {
               </svg>{" "}
               Phone:
             </span>
-            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75">
+            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75 text-16px">
               +91 7063762957
             </span>
           </div>
 
-          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6">
-            <span className="text-xl flex items-center gap-2 font-normal">
+          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6 mb-16px">
+            <span className="text-xl flex items-center gap-2 font-normal text-18px">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -212,13 +212,13 @@ const Form = () => {
               </svg>{" "}
               Whatsapp Number:
             </span>
-            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75">
+            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75 text-16px">
               +91 7063762957
             </span>
           </div>
 
-          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6">
-            <span className="text-xl flex items-center gap-2 font-normal">
+          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6 mb-16px">
+            <span className="text-xl flex items-center gap-2 font-normal text-18px">
               <svg
                 width="24"
                 height="24"
@@ -233,13 +233,13 @@ const Form = () => {
               </svg>{" "}
               Email:
             </span>
-            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75">
+            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75 text-16px">
               contact@susantaghosh.com
             </span>
           </div>
 
-          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6">
-            <span className="text-xl flex items-center gap-2 font-normal">
+          <div className="flex flex-col gap-4.75 border-b border-[#36415333] mb-6 mb-16px">
+            <span className="text-xl flex items-center gap-2 font-normal text-18px">
               <svg
                 width="24"
                 height="24"
@@ -266,12 +266,12 @@ const Form = () => {
               </svg>{" "}
               Opening Hours:
             </span>
-            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75">
+            <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75 text-16px">
               Monday – Saturday: 10:00 AM – 6:00 PM
             </span>
           </div>
 
-          <div className="mt-12 flex gap-4 items-start justify-start">
+          <div className="mt-12 mt-24px flex gap-4 items-start justify-start">
             <Link
               href="https://www.facebook.com/SusantaGhoshBJP"
               target="_blank"
