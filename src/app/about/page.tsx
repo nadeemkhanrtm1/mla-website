@@ -15,8 +15,8 @@ const page = () => {
 
       <div className="bg-[#f2f2f2]">
         <div className="container mx-auto">
-          <div className="px-[183px] py-20 flex flex-col gap-2.5">
-            <div className="flex flex-col justify-start items-center gap-12 mb-12">
+          <div className="px-[183px] py-20 flex flex-col gap-2.5 padding-0 py-42px">
+            <div className="flex flex-col justify-start items-center gap-12 mb-12 mb-24px">
               <div className="flex flex-col justify-start items-center gap-2">
                 <div className="px-4 py-2 bg-[#ff6600]/10 rounded-full inline-flex justify-center items-center gap-2.5">
                   <div className="text-center justify-center text-[#ff6600] text-sm font-medium font-['Mukta'] leading-5">
@@ -24,10 +24,10 @@ const page = () => {
                   </div>
                 </div>
                 <div className="self-stretch text-center justify-center">
-                  <span className="text-[#1a1a1a] text-[44px] font-semibold font-['Open_Sans']">
+                  <span className="text-[#1a1a1a] text-[44px] font-semibold font-['Open_Sans'] text-32px">
                     Our{" "}
                   </span>
-                  <span className="text-[#ff6600] text-[44px] font-semibold font-['Open_Sans']">
+                  <span className="text-[#ff6600] text-[44px] font-semibold font-['Open_Sans'] text-32px">
                     Vision &amp; Mission
                   </span>
                 </div>
@@ -35,8 +35,8 @@ const page = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="h-105 group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer">
-                <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
+              <div className="p-16px h-mobile-auto h-105 group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer">
+                <div className="w-16 h-16 scaler-0-point-8 mb-12px rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
                   <svg
                     width="64"
                     height="64"
@@ -61,7 +61,7 @@ const page = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-16px mb-4px text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                   Vision
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -73,8 +73,8 @@ const page = () => {
                 </p>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </div>
-              <div className="h-105 group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer">
-                <div className="w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+              <div className="p-16px h-mobile-auto h-105 group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer">
+                <div className="w-16 h-16 scaler-0-point-8 mb-12px rounded-xl flex items-center justify-center mb-6">
                   <svg
                     width="64"
                     height="64"
@@ -112,7 +112,7 @@ const page = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-16px mb-4px text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                   Mission
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
@@ -130,10 +130,10 @@ const page = () => {
         </div>
       </div>
 
-      <section className="my-30 container mx-auto">
-        <div className="w-[708px] mx-auto h-[312px] relative rounded-2xl">
+      <section className="my-30 my-40px container mx-auto">
+        <div className="w-177 w-mobile-100-perc mx-auto h-78 h-mobile-auto relative rounded-2xl">
           <svg
-            className="absolute -top-3 left-3 z-100"
+            className="absolute -top-10 left-3 z-100 scaler-0-point-8"
             width="78"
             height="78"
             viewBox="0 0 78 78"
@@ -216,20 +216,20 @@ const page = () => {
           </svg>
 
           <div
-            className="w-[708px] h-[312px] left-0 top-[24px] absolute bg-white rounded-2xl"
+            className="w-mobile-100-perc bg-white rounded-2xl p-8 pt-m-25px px-m-14px"
             style={{ boxShadow: "0px 0px 40px 10px rgba(0,0,0,0.08)" }}
           >
-            <div className="w-[630px] left-[32px] top-[32px] absolute inline-flex flex-col justify-start items-start gap-6">
-              <div className="self-stretch justify-center text-[#1a1a1a] text-2xl font-semibold font-['Open_Sans'] leading-9">
+            <div className="w-mobile-100-perc inline-flex flex-col justify-start items-start gap-6 gap-14px0">
+              <div className="self-stretch justify-center text-[#1a1a1a] text-2xl font-semibold font-['Open_Sans'] leading-9 text-16px">
                 &quot;My goal is to serve every citizen with honesty,
                 <br />
                 dedication, and commitment. Together, we will build a stronger
                 and progressive Pursurah where every family prospers.&quot;
               </div>
-              <div className="inline-flex justify-start items-center gap-6">
+              <div className="hidden lg:flex justify-start items-center gap-6">
                 <div className="w-20 h-20 relative bg-white/0 rounded-2xl shadow-[0px_10px_40px_0px_rgba(0,0,0,0.10)] outline outline-4 outline-offset-[-4px] outline-[#ff6600] overflow-hidden">
                   <Image
-                    className="w-[72px] h-[72px] left-[4px] top-[4px] absolute rounded-xl"
+                    className="w-18 h-18 left-1 top-1 absolute rounded-xl"
                     src="/about_mla_profile.png"
                     width={100}
                     height={100}
@@ -237,9 +237,9 @@ const page = () => {
                     alt=""
                   />
                 </div>
-                <div className="w-[212.03px] inline-flex flex-col justify-start items-start gap-0.5">
-                  <div className="w-[197px] flex flex-col justify-start items-start">
-                    <div className="w-[197px] h-7 justify-center text-[#1a1a1a] text-xl font-semibold font-['Open_Sans'] leading-7">
+                <div className="inline-flex flex-col justify-start items-start gap-0.5">
+                  <div className="flex flex-col justify-start items-start">
+                    <div className="justify-center text-[#1a1a1a] text-xl font-semibold font-['Open_Sans'] leading-7">
                       Shri Susanta Ghosh
                     </div>
                     <div className="self-stretch h-6 justify-center text-[#364153]/80 text-base font-normal font-['Mukta'] leading-6">
@@ -251,6 +251,20 @@ const page = () => {
                   </div>
                 </div>
               </div>
+
+
+              <div className="flex lg:hidden justify-start items-center gap-[9px]">
+  <div className="w-12 h-12 relative bg-white/0 rounded-lg shadow-[0px_10px_40px_0px_rgba(0,0,0,0.10)] outline outline-2 outline-offset-[-2px] outline-[#ff6600] overflow-hidden">
+    <img className="w-10 h-10 left-[4px] top-[4px] absolute"    src="/about_mla_profile.png" />
+  </div>
+  <div className="w-[197px] inline-flex flex-col justify-start items-start">
+    <div className="self-stretch h-9 relative">
+      <div className="w-[197px] h-[18px] left-0 top-0 absolute justify-center text-[#1a1a1a] text-sm font-semibold font-['Open_Sans'] leading-7">Shri Susanta Ghosh</div>
+      <div className="w-[197px] h-6 left-0 top-[17px] absolute justify-center text-[#364153]/80 text-sm font-normal font-['Mukta'] leading-6">MLA, Khanakul</div>
+    </div>
+    <div className="self-stretch h-5 justify-center text-[#ff6600] text-xs font-medium font-['Mukta'] leading-5">State Secretary, BJP West Bengal</div>
+  </div>
+</div>
             </div>
           </div>
         </div>

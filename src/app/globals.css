@@ -4683,6 +4683,24 @@ html {
   .margin-top-16px {
     margin-top: 16px !important;
   }
+  .padding-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .pt-m-25px{
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .px-m-14px{
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .gap-14px0{
+    gap: 14px;
+  }
 }
 
 .lg\:mx-auto {
