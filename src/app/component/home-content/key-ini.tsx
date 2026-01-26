@@ -60,17 +60,17 @@ const initiatives = [
 
 const KeyIntui = () => {
   return (
-    <section id="initiatives" className="py-20 bg-muted">
+    <section id="initiatives" className="py-20 py-40px bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-14 mb-24px">
           <span className="inline-block text-[#f60] bg-[rgba(255,102,0,0.1)] px-4 py-2 rounded-full text-sm mb-2 mukta-medium">
             Our Work
           </span>
-          <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal">
+          <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal text-mobile-32">
             Key Initiatives &amp;{" "}
             <span className="text-gradient">Achievements</span>
           </h2>
-          <p className="text-lg text-muted-foreground mukta-regular">
+          <p className="text-lg text-muted-foreground mukta-regular text-16px">
             A snapshot of impactful initiatives undertaken to improve lives and
             strengthen infrastructure in the Pursurah constituency.
           </p>
@@ -91,7 +91,7 @@ const KeyIntui = () => {
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg text-foreground mb-2 open-sans-bold-normal">
+                  <h3 className="text-lg text-foreground mb-2 open-sans-bold-normal text-16px">
                     {item.title}
                   </h3>
                   <p className="mukta-regular text-muted-foreground text-[16px] leading-6.5 mb-3">

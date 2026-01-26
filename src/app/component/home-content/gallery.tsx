@@ -109,23 +109,23 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="py-30 bg-background">
+    <section id="gallery" className="py-30 py-40px bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-8">
+        <div className="text-center max-w-3xl mx-auto mb-8 mb-24px">
           <span className="inline-block text-[#f60] bg-[rgba(255,102,0,0.1)] px-4 py-2 rounded-full text-sm mb-2 mukta-medium">
             Photo Gallery
           </span>
-          <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal">
+          <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal text-mobile-32">
             Recent Events &amp;{" "}
             <span className="text-gradient">Public Interaction</span>
           </h2>
-          <p className="text-lg text-muted-foreground mukta-regular">
+          <p className="text-lg text-muted-foreground mukta-regular text-16px">
             Glimpses of our continuous efforts to connect with and serve the
             people.
           </p>
         </div>
 
-        <div className="flex mx-auto justify-center items-center gap-3 mb-12">
+        <div className="flex mx-auto justify-center items-center gap-3 mb-12 mb-32px">
           {filters.map((filter) => (
             <FilterButton
               key={filter.value}

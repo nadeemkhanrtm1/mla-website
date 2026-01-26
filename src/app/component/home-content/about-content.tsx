@@ -2,17 +2,17 @@ import React from "react";
 
 const AboutContent = () => {
   return (
-    <section id="vision" className="py-20 bg-muted">
+    <section id="vision" className="py-20 py-42px bg-muted">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16 mb-24px">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary mukta-medium rounded-full text-sm mb-4">
             Vision &amp; Mission
           </span>
-          <h2 className="text-[44px] leading-15 text-foreground mb-6 open-sans-semibold-normal">
+          <h2 className="text-[44px] leading-15 text-foreground mb-6 open-sans-semibold-normal text-mobile-32">
             Vision for a Stronger &amp; Better{" "}
             <span className="text-gradient">Constituency</span>
           </h2>
-          <p className="text-lg text-muted-foreground mukta-regular">
+          <p className="text-lg text-muted-foreground mukta-regular text-16px">
             Our vision is to create a developed, self-reliant, and inclusive
             Pursurah, where every citizen has access to opportunities, safety,
             and a dignified quality of life.
@@ -20,11 +20,11 @@ const AboutContent = () => {
         </div>
         <div className="grid md:grid-cols-3 gap-8">
           <div
-            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer"
+            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer p-16px"
             style={{ animationDelay: "0s" }}
           >
             <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
-            <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
+            <div className="w-16 h-16 scaler-0-point-8 rounded-xl mb-12px bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -50,21 +50,21 @@ const AboutContent = () => {
                 <path d="M8 14h.01"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+            <h3 className="text-xl text-16px font-heading font-bold text-foreground mb-4 mb-4px group-hover:text-primary transition-colors">
               Development for All
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-14px">
               Focused on improving roads, housing, water supply, sanitation, and
               basic civic amenities across urban and rural areas.
             </p>
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
           <div
-            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer"
+            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer p-16px"
             style={{ animationDelay: "0.1s" }}
           >
             <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
-            <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
+            <div className="w-16 h-16 scaler-0-point-8 rounded-xl mb-12px bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -82,21 +82,21 @@ const AboutContent = () => {
                 <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+            <h3 className="text-xl text-16px font-heading font-bold text-foreground mb-4 mb-4px group-hover:text-primary transition-colors">
               Youth &amp; Education
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-14px">
               Empowering youth through education support, sports initiatives,
               skill development programs, and employment opportunities.
             </p>
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
           <div
-            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer"
+            className="group relative bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 overflow-hidden cursor-pointer p-16px"
             style={{ animationDelay: "0.2s" }}
           >
             <div className="absolute -top-18.75 -right-16.25 w-32 h-32 bg-gradient-saffron opacity-5 rounded-full group-hover:opacity-10 transition-opacity"></div>
-            <div className="w-16 h-16 rounded-xl bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
+            <div className="w-16 h-16 scaler-0-point-8 rounded-xl mb-12px bg-gradient-saffron flex items-center justify-center mb-6 shadow-button group-hover:animate-pulse-glow">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -112,10 +112,10 @@ const AboutContent = () => {
                 <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
               </svg>
             </div>
-            <h3 className="text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
+            <h3 className="text-xl text-16px font-heading font-bold text-foreground mb-4 mb-4px group-hover:text-primary transition-colors">
               Welfare &amp; Healthcare
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-14px">
               Strengthening healthcare access, social security schemes, women
               welfare programs, and support for senior citizens.
             </p>
