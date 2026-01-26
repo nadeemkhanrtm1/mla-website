@@ -94,7 +94,7 @@ const InterviewAndArticle = () => {
         <div className="container mx-auto mt-8 flex flex-wrap gap-6">
           {video_interviews?.map((video, index) => (
             <div
-              className="w-[411px] h-[404px] border rounded-xl"
+              className="w-[411px] border rounded-xl"
               style={{ borderColor: "#FF6600" }}
               key={index}
             >
