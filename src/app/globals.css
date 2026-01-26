@@ -213,7 +213,7 @@ body {
   --tw-contain-size: ;
   --tw-contain-layout: ;
   --tw-contain-paint: ;
-  --tw-contain-style:       
+  --tw-contain-style:         
 ;
 }
 
@@ -268,7 +268,7 @@ body {
   --tw-contain-size: ;
   --tw-contain-layout: ;
   --tw-contain-paint: ;
-  --tw-contain-style:       
+  --tw-contain-style:         
 ;
 }
 
@@ -2094,11 +2094,11 @@ h6 {
   background-color: #ffffffe6;
 }
 
-.bg-\[url\(\'data\:image\/svg\+xml\,\%3Csvg\%20width\%3D\%2260\%22\%20height\%3D\%2260\%22\%20viewBox\%3D\%220\%200\%2060\%2060\%22\%20xmlns\%3D\%22http\%3A\%2F\%2Fwww\.w3\.org\%2F2000\%2Fsvg\%22\%3E\%3Cg\%20fill\%3D\%22none\%22\%20fillRule\%3D\%22evenodd\%22\%3E\%3Cg\%20fill\%3D\%22\%23FF6A00\%22\%20fill-opacity\%3D\%220\.03\%22\%3E\%3Cpath\%20d\%3D\%22M36\%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6\%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6\%204V0H4v4H0v2h4v4h2V6h4V4H6z\%22\%2F\%3E\%3C\%2Fg\%3E\%3C\%2Fg\%3E\%3C\%2Fsvg\%3E\'\)\] {
-  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fillRule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23FF6A00%22%20fill-opacity%3D%220.03%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+.bg-\[url\(\'data\:image\/svg\+xml\,\%3Csvg\%20width\%3D\%2260\%22\%20height\%3D\%2260\%22\%20viewBox\%3D\%220\%200\%2060\%2060\%22\%20xmlns\%3D\%22http\%3A\%2F\%2Fwww\.w3\.org\%2F2000\%2Fsvg\%22\%3E\%3Cg\%20fill\%3D\%22none\%22\%20fillRule\%3D\%22evenodd\%22\%3E\%3Cg\%20fill\%3D\%22\%23FF6A00\%22\%20fillOpacity\%3D\%220\.03\%22\%3E\%3Cpath\%20d\%3D\%22M36\%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6\%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6\%204V0H4v4H0v2h4v4h2V6h4V4H6z\%22\%2F\%3E\%3C\%2Fg\%3E\%3C\%2Fg\%3E\%3C\%2Fsvg\%3E\'\)\] {
+  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fillRule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23FF6A00%22%20fillOpacity%3D%220.03%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
 }
-.bg-\[url\(\'data\:image\/svg\+xml\,\%3Csvg\%20width\%3D\%2260\%22\%20height\%3D\%2260\%22\%20viewBox\%3D\%220\%200\%2060\%2060\%22\%20xmlns\%3D\%22http\%3A\%2F\%2Fwww\.w3\.org\%2F2000\%2Fsvg\%22\%3E\%3Cg\%20fill\%3D\%22none\%22\%20fillRule\%3D\%22evenodd\%22\%3E\%3Cg\%20fill\%3D\%22\%23ffffff\%22\%20fill-opacity\%3D\%220\.1\%22\%3E\%3Cpath\%20d\%3D\%22M36\%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6\%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6\%204V0H4v4H0v2h4v4h2V6h4V4H6z\%22\%2F\%3E\%3C\%2Fg\%3E\%3C\%2Fg\%3E\%3C\%2Fsvg\%3E\'\)\] {
-  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fillRule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.1%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+.bg-\[url\(\'data\:image\/svg\+xml\,\%3Csvg\%20width\%3D\%2260\%22\%20height\%3D\%2260\%22\%20viewBox\%3D\%220\%200\%2060\%2060\%22\%20xmlns\%3D\%22http\%3A\%2F\%2Fwww\.w3\.org\%2F2000\%2Fsvg\%22\%3E\%3Cg\%20fill\%3D\%22none\%22\%20fillRule\%3D\%22evenodd\%22\%3E\%3Cg\%20fill\%3D\%22\%23ffffff\%22\%20fillOpacity\%3D\%220\.1\%22\%3E\%3Cpath\%20d\%3D\%22M36\%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6\%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6\%204V0H4v4H0v2h4v4h2V6h4V4H6z\%22\%2F\%3E\%3C\%2Fg\%3E\%3C\%2Fg\%3E\%3C\%2Fsvg\%3E\'\)\] {
+  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fillRule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fillOpacity%3D%220.1%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
 }
 .bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1557804506-669a67965ba0\?w\=1920\'\)\] {
   background-image: url(https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920);
@@ -4543,6 +4543,12 @@ html {
   height: 602px;
 }
 
+.slick-track {
+  display: flex !important;
+  gap: 32px !important;
+  align-items: start !important;
+}
+
 @media screen and (max-width: 992px) {
   /* Styles applied when the viewport width is 600px or less */
   .about-main-container {
@@ -4683,23 +4689,43 @@ html {
   .margin-top-16px {
     margin-top: 16px !important;
   }
-  .padding-0{
+  .padding-0 {
     padding-left: 0px;
     padding-right: 0px;
   }
 
-  .pt-m-25px{
+  .pt-m-25px {
     padding-top: 25px;
     padding-bottom: 25px;
   }
 
-  .px-m-14px{
+  .px-m-14px {
     padding-left: 14px;
     padding-right: 14px;
   }
 
-  .gap-14px0{
+  .gap-14px0 {
     gap: 14px;
+  }
+
+  .slick-track {
+    display: flex !important;
+    gap: 0px !important;
+    align-items: start !important;
+  }
+
+  .mobile-bottom-space {
+    margin-bottom: 130px;
+  }
+
+  .left-arrow {
+    left: 35% !important;
+    transform: translateX(-35%) !important;
+  }
+
+  .right-arrow {
+    left: 55% !important;
+    transform: translate(-55%) !important;
   }
 }
 
