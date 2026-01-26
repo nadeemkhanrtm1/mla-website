@@ -90,7 +90,7 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
         </div>
       </div>
 
-      <h1 className="justify-center text-[#1a1a1a] text-[44px] font-semibold font-['Open_Sans'] mb-8">
+      <h1 className="justify-center text-[#1a1a1a] text-[44px] font-semibold font-['Open_Sans'] mb-8 text-mobile-32">
         {details?.title}
       </h1>
 
