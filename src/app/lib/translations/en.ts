@@ -161,6 +161,26 @@ export const en = {
           alt: "Khanakul is ready for change.",
           title: "Khanakul is ready for change.",
         },
+        {
+          alt: "Poriborton Sankalpa Sabha in Chingra",
+          title: "Poriborton Sankalpa Sabha in Chingra",
+        },
+        {
+          alt: "People's of Khanakul at Poriborton Sankalpa Sabha",
+          title: "People's of Khanakul at Poriborton Sankalpa Sabha",
+        },
+        {
+          alt: "Chingra region of Khanakul Assembly",
+          title: "Chingra region of Khanakul Assembly",
+        },
+        {
+          alt: "Run Event for Youth Growth and Energy",
+          title: "Run Event for Youth Growth and Energy",
+        },
+        {
+          alt: "Courtyard meetings to hear Khanakul's people",
+          title: "Courtyard meetings to hear Khanakul's people",
+        },
       ],
     },
     join: {
