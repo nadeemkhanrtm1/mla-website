@@ -1,9 +1,36 @@
 "use client";
 
 import { useLanguage } from "@/app/context/LanguageContext";
+import AnimatedNumber from "react-animated-number";
+import { useState, useEffect, useRef } from "react";
 
 const SecondartContent = () => {
   const { t } = useLanguage();
+  const [isVisible, setIsVisible] = useState(false);
+  const statsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.3, // Trigger when 30% of the element is visible
+      }
+    );
+
+    if (statsRef.current) {
+      observer.observe(statsRef.current);
+    }
+
+    return () => {
+      if (statsRef.current) {
+        observer.unobserve(statsRef.current);
+      }
+    };
+  }, [isVisible]);
 
   return (
     <section id="about" className="lg:py-28 py-12px bg-background">
@@ -48,10 +75,14 @@ const SecondartContent = () => {
             <p className="text-lg text-muted-foreground leading-relaxed mb-8 mb-8px text-16px">
               {t.home.secondaryContent.paragraph2}
             </p>
-            <div className="grid sm:grid-cols-3 gap-4 w-[90%] w-63perce">
+            <div ref={statsRef} className="grid sm:grid-cols-3 gap-4 w-[90%] w-63perce">
               <div className="flex lg:flex-col lg:items-start items-center lg:gap-0 gap-2">
                 <div className="font-semibold text-5xl text-32px leading-12 text-gradient">
-                  {t.home.secondaryContent.stats.years}
+                  <AnimatedNumber
+                    value={isVisible ? parseInt(t.home.secondaryContent.stats.years.replace(/\D/g, '')) : 0}
+                    formatValue={(n: number) => n.toFixed(0) + '+'}
+                    duration={1000}
+                  />
                 </div>
                 <span className="text-lg leading-7 text-[#364153] text-16px">
                   {t.home.secondaryContent.stats.yearsLabel}
@@ -59,7 +90,11 @@ const SecondartContent = () => {
               </div>
               <div className="flex lg:flex-col lg:items-start items-center lg:gap-0 gap-2">
                 <div className="font-semibold text-5xl text-32px leading-12 text-[#117707]">
-                  {t.home.secondaryContent.stats.initiatives}
+                  <AnimatedNumber
+                    value={isVisible ? parseInt(t.home.secondaryContent.stats.initiatives.replace(/\D/g, '')) : 0}
+                    formatValue={(n: number) => n.toFixed(0) + '+'}
+                    duration={1000}
+                  />
                 </div>
                 <span className="text-lg leading-7 text-[#364153] text-16px">
                   {t.home.secondaryContent.stats.initiativesLabel}
@@ -67,7 +102,11 @@ const SecondartContent = () => {
               </div>
               <div className="flex lg:flex-col lg:items-start items-center lg:gap-0 gap-2">
                 <div className="font-semibold text-5xl text-32px leading-12 text-gradient">
-                  {t.home.secondaryContent.stats.citizens}
+                  <AnimatedNumber
+                    value={isVisible ? parseInt(t.home.secondaryContent.stats.citizens.replace(/\D/g, '')) : 0}
+                    formatValue={(n: number) => "0" + n.toFixed(0) + 'K'}
+                    duration={1000}
+                  />
                 </div>
                 <span className="text-lg leading-7 text-[#364153] text-16px">
                   {t.home.secondaryContent.stats.citizensLabel}
