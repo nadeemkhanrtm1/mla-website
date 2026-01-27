@@ -6,54 +6,9 @@ import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useLanguage } from "@/app/context/LanguageContext";
 
-const cardDetails = [
-  {
-    name: "Susanta Ghosh",
-    year: "2013",
-    desc: `General Secretary, Bharatiya Janata Yuva Morcha (BJYM), Mandal Level Served as Mandal General Secretary of BJP Yuva Morcha, actively engaging youth and strengthening grassroots organisation.`,
-  },
-  {
-    name: "Susanta Ghosh",
-    year: "2014",
-    desc: `General Secretary, Bharatiya Janata Yuva Morcha (BJYM), Mandal Level Served as Mandal General Secretary of BJP Yuva Morcha, actively engaging youth and strengthening grassroots organisation.`,
-  },
-  {
-    name: "Susanta Ghosh",
-    year: "2015",
-    desc: `Served as a full-time party worker in Katwa Assembly and Vice President, BJP Yuva Morcha, Hooghly District, leading youth mobilisation and supporting district-level organisation and activities`,
-  },
-  {
-    name: "Susanta Ghosh",
-    year: "2016",
-    desc: `Full-Time Party Worker, Katwa Assembly Continued organisational work in Katwa Assembly, strengthening booth-level and grassroots party structure.`,
-  },
-  {
-    name: "Susanta Ghosh",
-    year: "2017",
-    desc: `Full-Time Party Worker, Uluberia & Sabang Assembly Worked as a full-time party worker in Uluberia and Sabang Assembly constituencies, focusing on organisational building and election-related activities.`,
-  },
-  {
-    name: "Susanta Ghosh",
-    year: "2018",
-    desc: `Lok Sabha Vistarak, Dum Dum Parliamentary Constituency Served as a Lok Sabha Vistarak for Dum Dum Parliamentary Constituency, responsible for party expansion, booth strengthening, and cadre development.`,
-  },
-  {
-    name: "Susanta Ghosh",
-    year: "2019",
-    desc: `Full-Time Party Worker, Barrackpore Assembly Worked as a full-time party worker in Barrackpore Assembly constituency, focusing on election strategy and organisational activities.`,
-  },
-  {
-    name: "Susanta Ghosh",
-    year: "2020-21",
-    desc: `General Secretary, BJP Arambagh Organizational District, and Elected MLA from Khanakul Assembly Constituency, representing the people in the West Bengal Legislative Assembly.`,
-  },
-  {
-    name: "Susanta Ghosh",
-    year: "2022-26",
-    desc: `State General Secretary, Bharatiya Janata Yuva Morcha (West Bengal) Serving as State General Secretary of BJP Yuva Morcha, continuing to lead youth organisation and political mobilisation across the state.`,
-  },
-];
+
 
 function SampleNextArrow(props: any) {
   const { className, style, onClick, currentSlide, slideCount } = props;
@@ -132,6 +87,7 @@ function SamplePrevArrow(props: any) {
 }
 
 const page = () => {
+  const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 1024,
@@ -162,9 +118,9 @@ const page = () => {
   return (
     <>
       <MainBanner
-        bannerTitle="About Shri Susanta Ghosh"
-        subTitle="MLA, Khanakul | State Secretary, BJP West Bengal"
-        pillText="Member of Legislative Assembly"
+        bannerTitle={t.about.banner.title}
+        subTitle={t.about.banner.subtitle}
+        pillText={t.about.banner.pill}
       />
 
       <SecondartContent />
@@ -176,16 +132,17 @@ const page = () => {
             style={{ borderColor: "#ff6600" }}
           ></div>
           <div className="text-lg inline-flex px-9 py-2 items-center justify-center text-white bg-[#ff6600] rounded-bl-[10px] rounded-br-[10px]">
-            My Journey
+            {t.about.journey.title}
           </div>
         </div>
 
         <div className="slider-container relative mt-10">
           <Slider {...settings}>
-            {cardDetails?.map((cardDetail, index) => {
+            {t.about.journey.cards?.map((cardDetail: any, index: number) => {
               const isFirstVisible = index === currentSlide;
               return (
                 <div
+                  key={index}
                   className={`w-[411px] h-[209px] ${isFirstVisible ? "bg-[#ff6600]" : "bg-[#f2f2f2]"} p-4 relative rounded-tl-2xl rounded-bl-2xl rounded-br-2xl`}
                 >
                   <div
@@ -198,7 +155,7 @@ const page = () => {
                     style={{ color: isFirstVisible ? "white" : "#36415390" }}
                     className="justify-start text-lg font-normal font-['Mukta'] leading-7 text-16px"
                   >
-                    {cardDetail?.desc}
+                    {cardDetail?.description}
                     <br />
                   </div>
                   <div
@@ -226,15 +183,15 @@ const page = () => {
               <div className="flex flex-col justify-start items-center gap-2">
                 <div className="px-4 py-2 bg-[#ff6600]/10 rounded-full inline-flex justify-center items-center gap-2.5">
                   <div className="text-center justify-center text-[#ff6600] text-sm font-medium font-['Mukta'] leading-5">
-                    Vision &amp; Mission
+                    {t.about.visionMission.badge}
                   </div>
                 </div>
                 <div className="self-stretch text-center justify-center">
                   <span className="text-[#1a1a1a] text-[44px] font-semibold font-['Open_Sans'] text-32px">
-                    Our{" "}
+                    {t.about.visionMission.title}{" "}
                   </span>
                   <span className="text-[#ff6600] text-[44px] font-semibold font-['Open_Sans'] text-32px">
-                    Vision &amp; Mission
+                    {t.about.visionMission.titleHighlight}
                   </span>
                 </div>
               </div>
@@ -268,14 +225,10 @@ const page = () => {
                   </svg>
                 </div>
                 <h3 className="text-16px mb-4px text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                  Vision
+                  {t.about.visionMission.vision.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To transform Pursurah into a model constituency through
-                  sustainable development, strong civic infrastructure, and
-                  active citizen participation — where every family has access
-                  to quality healthcare, education, clean water, and better
-                  roads.
+                  {t.about.visionMission.vision.description}
                 </p>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </div>
@@ -319,15 +272,10 @@ const page = () => {
                   </svg>
                 </div>
                 <h3 className="text-16px mb-4px text-xl font-heading font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                  Mission
+                  {t.about.visionMission.mission.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To deliver inclusive and sustainable development in Pursurah
-                  by strengthening civic infrastructure, improving access to
-                  quality healthcare and education, ensuring clean water and
-                  safe roads, and empowering citizens to actively participate in
-                  shaping a transparent, progressive, and people-first
-                  constituency.
+                  {t.about.visionMission.mission.description}
                 </p>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </div>
@@ -427,10 +375,7 @@ const page = () => {
           >
             <div className="w-mobile-100-perc inline-flex flex-col justify-start items-start gap-6 gap-14px0">
               <div className="self-stretch justify-center text-[#1a1a1a] text-2xl font-semibold font-['Open_Sans'] leading-9 text-16px">
-                &quot;My goal is to serve every citizen with honesty,
-                <br />
-                dedication, and commitment. Together, we will build a stronger
-                and progressive Pursurah where every family prospers.&quot;
+                &quot;{t.about.quote.text}&quot;
               </div>
               <div className="hidden lg:flex justify-start items-center gap-6">
                 <div className="w-20 h-20 relative bg-white/0 rounded-2xl shadow-[0px_10px_40px_0px_rgba(0,0,0,0.10)] outline outline-4 outline-offset-[-4px] outline-[#ff6600] overflow-hidden">
@@ -446,14 +391,14 @@ const page = () => {
                 <div className="inline-flex flex-col justify-start items-start gap-0.5">
                   <div className="flex flex-col justify-start items-start">
                     <div className="justify-center text-[#1a1a1a] text-xl font-semibold font-['Open_Sans'] leading-7">
-                      Shri Susanta Ghosh
+                      {t.about.quote.name}
                     </div>
                     <div className="self-stretch h-6 justify-center text-[#364153]/80 text-base font-normal font-['Mukta'] leading-6">
-                      MLA, Khanakul
+                      {t.about.quote.title}
                     </div>
                   </div>
                   <div className="self-stretch h-5 justify-center text-[#ff6600] text-sm font-medium font-['Mukta'] leading-5">
-                    State Secretary, BJP West Bengal
+                    {t.about.quote.subtitle}
                   </div>
                 </div>
               </div>
@@ -468,14 +413,14 @@ const page = () => {
                 <div className="w-[197px] inline-flex flex-col justify-start items-start">
                   <div className="self-stretch h-9 relative">
                     <div className="w-[197px] h-[18px] left-0 top-0 absolute justify-center text-[#1a1a1a] text-sm font-semibold font-['Open_Sans'] leading-7">
-                      Shri Susanta Ghosh
+                      {t.about.quote.name}
                     </div>
                     <div className="w-[197px] h-6 left-0 top-[17px] absolute justify-center text-[#364153]/80 text-sm font-normal font-['Mukta'] leading-6">
-                      MLA, Khanakul
+                      {t.about.quote.title}
                     </div>
                   </div>
                   <div className="self-stretch h-5 justify-center text-[#ff6600] text-xs font-medium font-['Mukta'] leading-5">
-                    State Secretary, BJP West Bengal
+                    {t.about.quote.subtitle}
                   </div>
                 </div>
               </div>

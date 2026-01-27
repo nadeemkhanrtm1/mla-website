@@ -231,11 +231,89 @@ export const en = {
   about: {
     title: "About MLA Office",
     description: "Dedicated to serving our constituents with integrity and commitment",
+    banner: {
+      title: "About Shri Susanta Ghosh",
+      subtitle: "MLA, Khanakul | State Secretary, BJP West Bengal",
+      pill: "Member of Legislative Assembly",
+    },
+    journey: {
+      title: "My Journey",
+      cards: [
+        {
+          name: "Susanta Ghosh",
+          year: "2013",
+          description: "General Secretary, Bharatiya Janata Yuva Morcha (BJYM), Mandal Level Served as Mandal General Secretary of BJP Yuva Morcha, actively engaging youth and strengthening grassroots organisation.",
+        },
+        {
+          name: "Susanta Ghosh",
+          year: "2014",
+          description: "General Secretary, Bharatiya Janata Yuva Morcha (BJYM), Mandal Level Served as Mandal General Secretary of BJP Yuva Morcha, actively engaging youth and strengthening grassroots organisation.",
+        },
+        {
+          name: "Susanta Ghosh",
+          year: "2015",
+          description: "Served as a full-time party worker in Katwa Assembly and Vice President, BJP Yuva Morcha, Hooghly District, leading youth mobilisation and supporting district-level organisation and activities",
+        },
+        {
+          name: "Susanta Ghosh",
+          year: "2016",
+          description: "Full-Time Party Worker, Katwa Assembly Continued organisational work in Katwa Assembly, strengthening booth-level and grassroots party structure.",
+        },
+        {
+          name: "Susanta Ghosh",
+          year: "2017",
+          description: "Full-Time Party Worker, Uluberia & Sabang Assembly Worked as a full-time party worker in Uluberia and Sabang Assembly constituencies, focusing on organisational building and election-related activities.",
+        },
+        {
+          name: "Susanta Ghosh",
+          year: "2018",
+          description: "Lok Sabha Vistarak, Dum Dum Parliamentary Constituency Served as a Lok Sabha Vistarak for Dum Dum Parliamentary Constituency, responsible for party expansion, booth strengthening, and cadre development.",
+        },
+        {
+          name: "Susanta Ghosh",
+          year: "2019",
+          description: "Full-Time Party Worker, Barrackpore Assembly Worked as a full-time party worker in Barrackpore Assembly constituency, focusing on election strategy and organisational activities.",
+        },
+        {
+          name: "Susanta Ghosh",
+          year: "2020-21",
+          description: "General Secretary, BJP Arambagh Organizational District, and Elected MLA from Khanakul Assembly Constituency, representing the people in the West Bengal Legislative Assembly.",
+        },
+        {
+          name: "Susanta Ghosh",
+          year: "2022-26",
+          description: "State General Secretary, Bharatiya Janata Yuva Morcha (West Bengal) Serving as State General Secretary of BJP Yuva Morcha, continuing to lead youth organisation and political mobilisation across the state.",
+        },
+      ],
+    },
+    visionMission: {
+      badge: "Vision & Mission",
+      title: "Our",
+      titleHighlight: "Vision & Mission",
+      vision: {
+        title: "Vision",
+        description: "To transform Pursurah into a model constituency through sustainable development, strong civic infrastructure, and active citizen participation — where every family has access to quality healthcare, education, clean water, and better roads.",
+      },
+      mission: {
+        title: "Mission",
+        description: "To deliver inclusive and sustainable development in Pursurah by strengthening civic infrastructure, improving access to quality healthcare and education, ensuring clean water and safe roads, and empowering citizens to actively participate in shaping a transparent, progressive, and people-first constituency.",
+      },
+    },
+    quote: {
+      text: "My goal is to serve every citizen with honesty,\ndedication, and commitment. Together, we will build a stronger and progressive Pursurah where every family prospers.",
+      name: "Shri Susanta Ghosh",
+      title: "MLA, Khanakul",
+      subtitle: "State Secretary, BJP West Bengal",
+    },
   },
 
   // Contact Page
   contact: {
     title: "Contact Us",
+    banner: {
+      title: "Contact Us",
+      subtitle: "We would love to hear from you!",
+    },
     form: {
       name: "Name",
       email: "Email",
@@ -248,6 +326,10 @@ export const en = {
   gallery: {
     title: "Our Gallery",
     description: "Photo gallery and media",
+    banner: {
+      title: "Gallery",
+      subtitle: "Explore our photo gallery",
+    },
   },
 
   // News Page
