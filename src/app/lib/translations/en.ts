@@ -428,6 +428,84 @@ This programme highlighted the growing public support for positive change and st
     ],
   },
 
+  // Interviews
+  interviews: {
+    title: "Interviews & Articles",
+    description: "Stay updated with the latest interviews, media appearances, press coverage, and articles",
+    banner: {
+      title: "Interviews & Articles",
+      subtitle: "Stay updated with the latest interviews, media appearances, press coverage, and articles featuring Shri Susanta Ghosh",
+    },
+    videoInterviews: {
+      heading: "Video Interviews",
+      videos: [
+        {
+          id: 1,
+          category: "Youtube",
+          date: "August 1, 2025",
+          title: "MLA Susanta Ghosh's Vision for Khanakul, Hooghly",
+          duration: "07 mins",
+        },
+        {
+          id: 2,
+          category: "Youtube",
+          date: "February 13, 2025",
+          title: "MLA Susanta Ghosh Leads Farmers' Protest for Irrigation Water in Khanakul",
+          duration: "04 mins",
+        },
+        {
+          id: 3,
+          category: "Youtube",
+          date: "May 6, 2025",
+          title: "Susanta Ghosh Addresses Political Violence and Governance Concerns",
+          duration: "21 mins",
+        },
+      ],
+    },
+    newsArticles: {
+      heading: "News Articles & Coverage",
+      readFullArticle: "Read Full Article",
+      newsBy: "Khanakul News",
+      articles: [
+        {
+          id: 1,
+          category: "Development",
+          title: "Major Drainage Infrastructure Project",
+          content: "Under the leadership of MLA Susanta Ghosh, a major drainage infrastructure project worth approximately ₹27 lakh was implemented in the Arambagh region through the BJP-led Panchayat Samiti.",
+          articleLink: "major-drainage-infrastructure-project",
+        },
+        {
+          id: 2,
+          category: "Politics",
+          title: "Youth Marathon Organised to Promote a Drug-Free and Healthy Society",
+          content: "On the occasion of National Youth Day, a large-scale Youth Marathon was organised in Khanakul under the guidance of MLA Susanta Ghosh, with the objective of promoting a drug-free, community.",
+          articleLink: "youth-marathon-organised-to-promote-a-drug-free-and-healthy-society",
+        },
+        {
+          id: 3,
+          category: "Politics",
+          title: "The Central Government's road connectivity initiative for rural areas",
+          content: "In a significant step toward regional infrastructure development, MLA Susanta Ghosh held discussions with the Union Minister for Road Transport and Highways regarding the improvement of road.",
+          articleLink: "central-government-road-connectivity-initiative-for-rural-areas",
+        },
+        {
+          id: 4,
+          category: "Politics",
+          title: "Model Education and Child Development Centres",
+          content: "A child development and education centre in Khanakul has been upgraded into a model learning institution, focusing on early childhood education, nutrition, and holistic development.",
+          articleLink: "model-education-and-child-development-centres",
+        },
+        {
+          id: 5,
+          category: "Politics",
+          title: "BJP Organisational Strength and Victory Celebration",
+          content: "Following the Bharatiya Janata Party's electoral victory in Delhi, party workers and supporters in Arambagh organised a celebration programme to mark the success and strengthen organisational.",
+          articleLink: "bjp-organisational-strength-and-victory-celebration",
+        },
+      ],
+    },
+  },
+
   // Footer
   footer: {
     name: "Shri Susanta Ghosh",
