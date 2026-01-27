@@ -1,5 +1,4 @@
 export const bn = {
-  // Header & Navigation
   header: {
     home: "হোম",
     about: "সম্পর্কে",
@@ -8,17 +7,15 @@ export const bn = {
     gallery: "গ্যালারি",
     contact: "যোগাযোগ করুন",
     joinNow: "এখনই যোগ দিন",
-    mlaOffice: "বিধায়ক অফিস",
+    mlaOffice: "সুশান্ত ঘোষ",
   },
 
-  // Common
   common: {
     languageEN: "English",
     languageHI: "हिन्दी",
     languageBN: "বাংলা",
   },
 
-  // Home Page
   home: {
     hero: {
       title: "বিধায়ক অফিসে আপনাকে স্বাগতম",

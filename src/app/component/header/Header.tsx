@@ -8,6 +8,7 @@ import { Button } from "../ui/Button";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { LanguageSwitcher } from "../LanguageSwitcher";
+import Image from "next/image";
 
 const Header = () => {
   const pathname = usePathname();
@@ -53,7 +54,9 @@ const Header = () => {
         <div className={styles.inner}>
           <div className={styles.logoSection}>
             <div className={styles.logoCircle}>
-              <span className={styles.logoM}>M</span>
+              <span className={styles.logoM}>
+                <Image src="/logo.svg" alt="Logo" width={50} height={50} unoptimized />
+              </span>
             </div>
             <span className={styles.logoText}>{t.header.mlaOffice}</span>
           </div>
@@ -125,7 +128,7 @@ const Header = () => {
         </div>
       )}
 
-      <LanguageSwitcher/>
+      <LanguageSwitcher />
     </>
   );
 };
