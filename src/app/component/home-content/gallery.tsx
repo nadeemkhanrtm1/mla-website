@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { useLanguage } from "@/app/context/LanguageContext";
 
 interface GalleryItem {
-  id: string;
+  id: number;
   src: string;
   alt: string;
   title: string;
@@ -43,45 +43,87 @@ const Gallery = () => {
 
   const defaultGalleryItems: GalleryItem[] = [
     {
-      id: "1",
+      id: 1,
       src: "/gallery_image_1.png",
       alt: t.home.gallery.items[0].alt,
       title: t.home.gallery.items[0].title,
       type: "photo",
     },
     {
-      id: "2",
+      id: 2,
       src: "/gallery_video_1.mp4",
       alt: t.home.gallery.items[1].alt,
       title: t.home.gallery.items[1].title,
       type: "video",
     },
     {
-      id: "3",
+      id: 3,
       src: "/gallery_video_2.mp4",
       alt: t.home.gallery.items[2].alt,
       title: t.home.gallery.items[2].title,
       type: "video",
     },
     {
-      id: "4",
+      id: 4,
       src: "/gallery_image_2.png",
       alt: t.home.gallery.items[3].alt,
       title: t.home.gallery.items[3].title,
       type: "photo",
     },
     {
-      id: "5",
+      id: 5,
       src: "/gallery_image_3.png",
       alt: t.home.gallery.items[4].alt,
       title: t.home.gallery.items[4].title,
       type: "photo",
     },
     {
-      id: "6",
+      id: 6,
       src: "/gallery_image_4.png",
       alt: t.home.gallery.items[5].alt,
       title: t.home.gallery.items[5].title,
+      type: "photo",
+    },
+    {
+      id: 7,
+      src: '/gallery_video_3.mp4',
+      alt: "",
+      title: "",
+      type: "video",
+    },
+    {
+      id: 8,
+      src: "/gallery_image_5.jpg",
+      alt: t.home.gallery.items[6].alt,
+      title: t.home.gallery.items[6].title,
+      type: "photo",
+    },
+    {
+      id: 9,
+      src: "/gallery_image_6.jpg",
+      alt: t.home.gallery.items[7].alt,
+      title: t.home.gallery.items[7].title,
+      type: "photo",
+    },
+    {
+      id: 10,
+      src: "/gallery_image_7.jpg",
+      alt: t.home.gallery.items[8].alt,
+      title: t.home.gallery.items[8].title,
+      type: "photo",
+    },
+    {
+      id: 11,
+      src: "/gallery_image_8.jpg",
+      alt: t.home.gallery.items[9].alt,
+      title: t.home.gallery.items[9].title,
+      type: "photo",
+    },
+    {
+      id: 12,
+      src: "/gallery_image_9.jpg",
+      alt: t.home.gallery.items[10].alt,
+      title: t.home.gallery.items[10].title,
       type: "photo",
     },
   ];
