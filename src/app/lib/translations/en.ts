@@ -1,5 +1,5 @@
 export const en = {
-  // Header & Navigation
+
   header: {
     home: "Home",
     about: "About",
@@ -8,17 +8,15 @@ export const en = {
     gallery: "Gallery",
     contact: "Contact Us",
     joinNow: "Join Now",
-    mlaOffice: "MLA Office",
+    mlaOffice: "Susanta Ghosh",
   },
 
-  // Common
   common: {
     languageEN: "English",
     languageHI: "हिन्दी",
     languageBN: "বাংলা",
   },
 
-  // Home Page
   home: {
     hero: {
       title: "Welcome to MLA Office",

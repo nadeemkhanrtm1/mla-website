@@ -8,7 +8,7 @@ export const hi = {
     gallery: "गैलरी",
     contact: "संपर्क करें",
     joinNow: "अभी जुड़ें",
-    mlaOffice: "विधायक कार्यालय",
+    mlaOffice: "सुशांत घोष",
   },
 
   // Common
