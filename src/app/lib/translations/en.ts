@@ -370,6 +370,10 @@ export const en = {
         category: "Education",
         title: "Celebrating Education & Legacy at Balai Chak High School, Chingra",
         excerpt: "Education remains the foundation of a strong society. In (Diamond Jubilee) celebration",
+        slug: "celebrating-education-legacy-at-balai-chak-high-school-chingra",
+        descriptionHtml: `Education remains the foundation of a strong society. In this spirit, I attended the Hirak Jayanti (Diamond Jubilee) celebration of Balai Chak High School in the Chingra region under the Khanakul Assembly constituency.<br/>
+The event marked 60 years of the institution's contribution to education, values, and character-building among generations of students. It was heartening to interact with teachers, alumni, students, and local residents who have been part of this proud journey.<br/>
+Such institutions play a crucial role in shaping responsible citizens and empowering rural Bengal through education. Supporting schools, teachers, and students is not just a duty — it is an investment in the future of Khanakul and West Bengal.`,
       },
       {
         id: 2,
@@ -377,6 +381,11 @@ export const en = {
         category: "Healthcare",
         title: "Hon'ble Prime Minister Narendra Modi Attends Poriborton Sankalpa",
         excerpt: "the safety of daughters is at risk, the education system has fallen into the hands of mafias,",
+        slug: "honble-prime-minister-narendra-modi-attends-poriborton-sankalpa",
+        descriptionHtml: `On the sacred land of Singur, the historic Poriborton Sankalpa Sabha was held in the presence of the Hon'ble Prime Minister Narendra Modi, where lakhs of people gathered with one clear resolve — West Bengal needs real change.
+Addressing the massive gathering, the Prime Minister strongly highlighted the failures of the Trinamool regime, stating that under their rule, the safety of daughters is at risk, the education system has fallen into the hands of mafias, and thousands of teachers have lost their jobs. He appealed directly to the mothers and sisters of Bengal, asserting that true security and dignity are possible only when Trinamool is removed from power.
+He emphasized that every single vote for BJP is a vote against corruption, fear, and lawlessness, assuring that incidents like Sandeshkhali and large-scale job losses will not be repeated under a BJP-led government. Calling upon the people to take a collective pledge, he said, "Change is necessary — Bengal needs BJP governance."
+Beginning his address with "Jai Sri Ramakrishna Dev, Jai Maa Sarada," the Prime Minister paid his respects to Singur's holy soil. The presence of mothers, farmers, youth, and working citizens reflected a growing momentum — a new chapter is being written in Bengal's political history. He also highlighted BJP's commitment to Bengal's culture, mentioning how Durga Puja received UNESCO's Cultural Heritage recognition due to BJP's efforts.`,
       },
       {
         id: 3,
@@ -384,6 +393,12 @@ export const en = {
         category: "Youth",
         title: "Run For Youth: Khanakul's Young Energy on the Streets",
         excerpt: "Running from Ramnagar to Chakpur, the marathon was not just about physical endurance",
+        slug: "run-for-youth-khanakuls-young-energy-on-the-streets",
+        descriptionHtml: ` Category: Youth & Social Initiative
+Khanakul witnessed an inspiring display of youth power as we successfully organised the Run For Youth Marathon, bringing together young participants from across the constituency.
+Running from Ramnagar to Chakpur, the marathon was not just about physical endurance — it was a statement of confidence, discipline, and determination. Our young boys and girls proved that Khanakul's youth are strong, focused, and ready to lead from the front.
+Later in the day, I also participated in the Hindu Sammelan at the Marokhana region of Khanakul Assembly, where community unity, cultural values, and social harmony were reaffirmed.
+These initiatives reflect a clear commitment — empowering youth, strengthening society, and building a confident future for Khanakul.`,
       },
       {
         id: 4,
@@ -391,6 +406,11 @@ export const en = {
         category: "Welfare",
         title: "Listen to People's Voices in Khanakul",
         excerpt: "To stay close to the people and understand their real problems, Uthan Baithak",
+        slug: "listen-to-peoples-voices-in-khanakul",
+        descriptionHtml: `To stay close to the people and understand their real problems, Uthan Baithak (Courtyard Meetings) were held in Palashpai 1 & 2 No. regions of Khanakul.
+These meetings were not held on big stages. Instead, discussions took place in people's courtyards, where residents could speak freely. People shared their daily problems, ideas, and suggestions, and spoke openly about what they expect from their representative.
+The main aim of this programme was simple — to listen carefully to people and work for real solutions. These meetings showed that people's voices matter the most, and strong leadership begins by listening at the grassroots level.
+`,
       },
       {
         id: 5,
@@ -398,6 +418,12 @@ export const en = {
         category: "Development",
         title: "Poriborton Sankalpa Sabha at Chingra",
         excerpt: "The meeting was attended by Hon'ble Member of Parliament Locket Chatterjee",
+        slug: "poriborton-sankalpa-sabha-at-chingra",
+        descriptionHtml: `A Poriborton Sankalpa Sabha was held in the Chingra region of Khanakul Assembly, where a large number of people gathered to express their strong desire for change and better governance.
+The meeting was attended by Hon'ble Member of Parliament Locket Chatterjee, who addressed the public and spoke about the need for honest leadership, development, and people-focused governance in West Bengal.
+The enthusiasm and participation of the people clearly showed growing dissatisfaction with the current situation and a rising hope for change. The response from the gathering reflected that the people of Khanakul are ready for a better future.
+This programme highlighted the growing public support for positive change and strengthened the collective resolve to work towards development, safety, and dignity for all.
+`,
       },
     ],
   },
