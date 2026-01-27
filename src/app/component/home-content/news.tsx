@@ -7,7 +7,7 @@ const News = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="news" className="py-20 py-40px margin-bottom-350px">
+    <section id="news" className="py-20 py-40px">
       <div className="container mx-auto px-4">
         <div className="self-stretch flex flex-col lg:flex-row justify-start items-center gap-[278px] gap-mobile-0 mb-12 mb-24px mobile-center">
           <div className="w-[517px] w-mobile-100-perc inline-flex flex-col justify-start items-start gap-2 mobile-center">
@@ -24,7 +24,7 @@ const News = () => {
             <div className="self-stretch justify-start text-[#364153] text-lg font-normal font-['Mukta'] leading-7 text-16px">
               {t.home.news.description}
             </div>
-            <Link href="/interviews">
+            <Link href="/interviews" className="lg:block hidden">
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-md px-8 text-base">
                 {t.home.news.viewAllButton}
                 <svg
@@ -113,6 +113,26 @@ const News = () => {
           </div>
         </div>
       </div>
+      <Link href="/interviews" className="lg:hidden block text-center w-full" style={{ marginTop: "350px" }}>
+        <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-md px-8 text-base">
+          {t.home.news.viewAllButton}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-arrow-right w-4 h-4"
+          >
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </button>
+      </Link>
     </section>
   );
 };
