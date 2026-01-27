@@ -132,6 +132,8 @@ export const hi = {
       title: "हाल की घटनाएं और",
       titleHighlight: "जनता से संवाद",
       description: "लोगों से जुड़ने और उनकी सेवा करने के हमारे निरंतर प्रयासों की झलकियां।",
+      loadMoreButton: "और देखें",
+      showLessButton: "कम दिखाएं",
       filters: {
         all: "सभी",
         photos: "फोटो",

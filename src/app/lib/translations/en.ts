@@ -131,6 +131,8 @@ export const en = {
       title: "Recent Events &",
       titleHighlight: "Public Interaction",
       description: "Glimpses of our continuous efforts to connect with and serve the people.",
+      loadMoreButton: "Load More",
+      showLessButton: "Show Less",
       filters: {
         all: "All",
         photos: "Photos",
