@@ -93,7 +93,7 @@ const Gallery = () => {
     },
     {
       id: 8,
-      src: "/gallery_image_5.jpg",
+      src: "/gallery_image_5.JPG",
       alt: t.home.gallery.items[6].alt,
       title: t.home.gallery.items[6].title,
       type: "photo",
