@@ -130,6 +130,8 @@ export const bn = {
       title: "সাম্প্রতিক ইভেন্ট ও",
       titleHighlight: "জনসাধারণের সাথে যোগাযোগ",
       description: "মানুষের সাথে সংযোগ স্থাপন এবং তাদের সেবা করার জন্য আমাদের ক্রমাগত প্রচেষ্টার ঝলক।",
+      loadMoreButton: "আরও দেখুন",
+      showLessButton: "কম দেখুন",
       filters: {
         all: "সব",
         photos: "ফটো",
