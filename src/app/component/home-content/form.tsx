@@ -12,8 +12,10 @@ import HoveredUTube from "@/assets/hovered_youtube.svg";
 import HoveredWhatsapp from "@/assets/hovered_whatsapp.svg";
 import HoveredIg from "@/assets/hovered_ig.svg";
 import Image from "next/image";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Form = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -46,14 +48,14 @@ const Form = () => {
     <section id="form" className="my-30 my-40px">
       <div className="text-center max-w-3xl mx-auto mb-16 mb-16px">
         <span className="inline-block text-[#f60] bg-[rgba(255,102,0,0.1)] px-4 py-2 rounded-full text-sm mb-2 mukta-medium">
-          Get in Touch
+          {t.home.contact.badge}
         </span>
         <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal text-mobile-32">
-          Contact Shri
-          <span className="text-gradient">Susanta Ghosh</span>
+          {t.home.contact.title}{" "}
+          <span className="text-gradient">{t.home.contact.titleHighlight}</span>
         </h2>
         <p className="text-lg text-muted-foreground mukta-regular text-16px">
-          For suggestions, grievances, or public matters, feel free to connect.
+          {t.home.contact.description}
         </p>
       </div>
 
@@ -65,7 +67,7 @@ const Form = () => {
                 htmlFor="name"
                 className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
               >
-                Your Name
+                {t.home.contact.form.nameLabel}
               </label>
               <input
                 type="text"
@@ -73,7 +75,7 @@ const Form = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Enter your full Name"
+                placeholder={t.home.contact.form.namePlaceholder}
                 className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 required
               />
@@ -84,7 +86,7 @@ const Form = () => {
                 htmlFor="email"
                 className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
               >
-                Your Email
+                {t.home.contact.form.emailLabel}
               </label>
               <input
                 type="email"
@@ -92,7 +94,7 @@ const Form = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Enter your email"
+                placeholder={t.home.contact.form.emailPlaceholder}
                 className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 required
               />
@@ -103,7 +105,7 @@ const Form = () => {
                 htmlFor="phone"
                 className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
               >
-                Phone Number
+                {t.home.contact.form.phoneLabel}
               </label>
               <input
                 type="tel"
@@ -111,7 +113,7 @@ const Form = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="Enter your phone number"
+                placeholder={t.home.contact.form.phonePlaceholder}
                 className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 required
               />
@@ -122,7 +124,7 @@ const Form = () => {
                 htmlFor="query"
                 className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
               >
-                Your Query
+                {t.home.contact.form.queryLabel}
               </label>
               <select
                 id="query"
@@ -136,13 +138,13 @@ const Form = () => {
                   value=""
                   className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200"
                 >
-                  Select a query type
+                  {t.home.contact.form.queryPlaceholder}
                 </option>
-                <option value="suggestion">Suggestion</option>
-                <option value="complaint">Complaint</option>
-                <option value="feedback">Feedback</option>
-                <option value="grievance">Grievance</option>
-                <option value="other">Other</option>
+                <option value="suggestion">{t.home.contact.form.queryOptions.suggestion}</option>
+                <option value="complaint">{t.home.contact.form.queryOptions.complaint}</option>
+                <option value="feedback">{t.home.contact.form.queryOptions.feedback}</option>
+                <option value="grievance">{t.home.contact.form.queryOptions.grievance}</option>
+                <option value="other">{t.home.contact.form.queryOptions.other}</option>
               </select>
             </div>
 
@@ -151,14 +153,14 @@ const Form = () => {
                 htmlFor="message"
                 className="self-stretch h-5 justify-center text-[#1a1a1a] text-lg font-medium font-['Mukta'] leading-5"
               >
-                Message
+                {t.home.contact.form.messageLabel}
               </label>
               <textarea
                 id="message"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Enter your message"
+                placeholder={t.home.contact.form.messagePlaceholder}
                 rows={4}
                 className="w-full bg-white px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200 resize-none"
                 required
@@ -170,7 +172,7 @@ const Form = () => {
               className="col-span-2 w-full bg-[#FF6600] text-white py-3 rounded-xl margin-top-16px"
               style={{ background: "#FF6600", marginTop: "24px" }}
             >
-              Submit
+              {t.home.contact.form.submitButton}
             </button>
           </form>
         </div>
@@ -189,7 +191,7 @@ const Form = () => {
                   fill="#1A1A1A"
                 />
               </svg>{" "}
-              Phone:
+              {t.home.contact.info.phone}
             </span>
             <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75 text-16px">
               +91 7063762957
@@ -210,7 +212,7 @@ const Form = () => {
                   fill="#1A1A1A"
                 />
               </svg>{" "}
-              Whatsapp Number:
+              {t.home.contact.info.whatsapp}
             </span>
             <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75 text-16px">
               +91 7063762957
@@ -231,7 +233,7 @@ const Form = () => {
                   fill="#1A1A1A"
                 />
               </svg>{" "}
-              Email:
+              {t.home.contact.info.email}
             </span>
             <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75 text-16px">
               contact@susantaghosh.com
@@ -264,10 +266,10 @@ const Form = () => {
                   strokeLinecap="round"
                 />
               </svg>{" "}
-              Opening Hours:
+              {t.home.contact.info.openingHours}
             </span>
             <span className="mb-5 text-[18px] font-normal text-[#364153CC] leading-5.75 text-16px">
-              Monday – Saturday: 10:00 AM – 6:00 PM
+              {t.home.contact.info.openingHoursValue}
             </span>
           </div>
 

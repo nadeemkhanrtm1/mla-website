@@ -1,21 +1,24 @@
+"use client";
+
 import React from "react";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const AboutContent = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="vision" className="py-20 py-42px bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16 mb-24px">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary mukta-medium rounded-full text-sm mb-4">
-            Vision &amp; Mission
+            {t.home.aboutContent.badge}
           </span>
           <h2 className="text-[44px] leading-15 text-foreground mb-6 open-sans-semibold-normal text-mobile-32">
-            Vision for a Stronger &amp; Better{" "}
-            <span className="text-gradient">Constituency</span>
+            {t.home.aboutContent.title}{" "}
+            <span className="text-gradient">{t.home.aboutContent.titleHighlight}</span>
           </h2>
           <p className="text-lg text-muted-foreground mukta-regular text-16px">
-            Our vision is to create a developed, self-reliant, and inclusive
-            Pursurah, where every citizen has access to opportunities, safety,
-            and a dignified quality of life.
+            {t.home.aboutContent.description}
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
@@ -51,11 +54,10 @@ const AboutContent = () => {
               </svg>
             </div>
             <h3 className="text-xl text-16px font-heading font-bold text-foreground mb-4 mb-4px group-hover:text-primary transition-colors">
-              Development for All
+              {t.home.aboutContent.cards.development.title}
             </h3>
             <p className="text-muted-foreground leading-relaxed text-14px">
-              Focused on improving roads, housing, water supply, sanitation, and
-              basic civic amenities across urban and rural areas.
+              {t.home.aboutContent.cards.development.description}
             </p>
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
@@ -83,11 +85,10 @@ const AboutContent = () => {
               </svg>
             </div>
             <h3 className="text-xl text-16px font-heading font-bold text-foreground mb-4 mb-4px group-hover:text-primary transition-colors">
-              Youth &amp; Education
+              {t.home.aboutContent.cards.youth.title}
             </h3>
             <p className="text-muted-foreground leading-relaxed text-14px">
-              Empowering youth through education support, sports initiatives,
-              skill development programs, and employment opportunities.
+              {t.home.aboutContent.cards.youth.description}
             </p>
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
@@ -113,11 +114,10 @@ const AboutContent = () => {
               </svg>
             </div>
             <h3 className="text-xl text-16px font-heading font-bold text-foreground mb-4 mb-4px group-hover:text-primary transition-colors">
-              Welfare &amp; Healthcare
+              {t.home.aboutContent.cards.welfare.title}
             </h3>
             <p className="text-muted-foreground leading-relaxed text-14px">
-              Strengthening healthcare access, social security schemes, women
-              welfare programs, and support for senior citizens.
+              {t.home.aboutContent.cards.welfare.description}
             </p>
             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-saffron scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </div>
@@ -128,3 +128,4 @@ const AboutContent = () => {
 };
 
 export default AboutContent;
+

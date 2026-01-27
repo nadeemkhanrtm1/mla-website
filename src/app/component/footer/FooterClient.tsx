@@ -1,0 +1,215 @@
+"use client";
+
+import Link from "next/link";
+import { useLanguage } from "@/app/context/LanguageContext";
+
+export const FooterClient = () => {
+  const { t } = useLanguage();
+
+  return (
+    <footer className="bg-foreground text-background">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="lg:col-span-2">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-12 h-12 rounded-full bg-gradient-saffron flex items-center justify-center">
+                <span className="text-primary-foreground font-heading font-bold text-xl">
+                  M
+                </span>
+              </div>
+              <div>
+                <span className="font-heading font-bold text-xl block">
+                  {t.footer.name}
+                </span>
+                <span className="text-background/70 text-sm">
+                  {t.footer.title}
+                </span>
+              </div>
+            </div>
+            <p className="text-background/70 leading-relaxed mb-6 max-w-md">
+              {t.footer.description}
+            </p>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/SusantaGhoshBJP"
+                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-facebook w-5 h-5"
+                >
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a
+                href="https://x.com/SusantaGhoshBJP"
+                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                aria-label="Twitter"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-twitter w-5 h-5"
+                >
+                  <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/mr.susantaghosh/"
+                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                aria-label="Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-instagram w-5 h-5"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@SusantaGhoshBJP"
+                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                aria-label="YouTube"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="lucide lucide-youtube w-5 h-5"
+                >
+                  <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                  <path d="m10 15 5-3-5-3z"></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/susanta-ghosh-89545a3a4/"
+                aria-label="Linkedin"
+                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="40"
+                    height="40"
+                    rx="20"
+                    fill="white"
+                    fillOpacity="0.1"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M14.1667 11.0415C13.5589 11.0415 12.976 11.2829 12.5462 11.7127C12.1164 12.1425 11.875 12.7254 11.875 13.3332C11.875 13.941 12.1164 14.5239 12.5462 14.9536C12.976 15.3834 13.5589 15.6248 14.1667 15.6248C14.7745 15.6248 15.3573 15.3834 15.7871 14.9536C16.2169 14.5239 16.4583 13.941 16.4583 13.3332C16.4583 12.7254 16.2169 12.1425 15.7871 11.7127C15.3573 11.2829 14.7745 11.0415 14.1667 11.0415ZM13.125 13.3332C13.125 13.0569 13.2347 12.792 13.4301 12.5966C13.6254 12.4013 13.8904 12.2915 14.1667 12.2915C14.4429 12.2915 14.7079 12.4013 14.9032 12.5966C15.0986 12.792 15.2083 13.0569 15.2083 13.3332C15.2083 13.6094 15.0986 13.8744 14.9032 14.0697C14.7079 14.2651 14.4429 14.3748 14.1667 14.3748C13.8904 14.3748 13.6254 14.2651 13.4301 14.0697C13.2347 13.8744 13.125 13.6094 13.125 13.3332ZM11.875 16.6665C11.875 16.5007 11.9408 16.3418 12.0581 16.2246C12.1753 16.1074 12.3342 16.0415 12.5 16.0415H15.8333C15.9991 16.0415 16.1581 16.1074 16.2753 16.2246C16.3925 16.3418 16.4583 16.5007 16.4583 16.6665V27.4998C16.4583 27.6656 16.3925 27.8246 16.2753 27.9418C16.1581 28.059 15.9991 28.1248 15.8333 28.1248H12.5C12.3342 28.1248 12.1753 28.059 12.0581 27.9418C11.9408 27.8246 11.875 27.6656 11.875 27.4998V16.6665ZM13.125 17.2915V26.8748H15.2083V17.2915H13.125ZM17.7083 16.6665C17.7083 16.5007 17.7742 16.3418 17.8914 16.2246C18.0086 16.1074 18.1676 16.0415 18.3333 16.0415H21.6667C21.8324 16.0415 21.9914 16.1074 22.1086 16.2246C22.2258 16.3418 22.2917 16.5007 22.2917 16.6665V17.0282L22.6542 16.8723C23.2792 16.6053 23.9423 16.438 24.6192 16.3765C26.9317 16.1665 28.9583 17.9832 28.9583 20.3165V27.4998C28.9583 27.6656 28.8925 27.8246 28.7753 27.9418C28.6581 28.059 28.4991 28.1248 28.3333 28.1248H25C24.8342 28.1248 24.6753 28.059 24.5581 27.9418C24.4408 27.8246 24.375 27.6656 24.375 27.4998V21.6665C24.375 21.3902 24.2653 21.1253 24.0699 20.9299C23.8746 20.7346 23.6096 20.6248 23.3333 20.6248C23.0571 20.6248 22.7921 20.7346 22.5968 20.9299C22.4014 21.1253 22.2917 21.3902 22.2917 21.6665V27.4998C22.2917 27.6656 22.2258 27.8246 22.1086 27.9418C21.9914 28.059 21.8324 28.1248 21.6667 28.1248H18.3333C18.1676 28.1248 18.0086 28.059 17.8914 27.9418C17.7742 27.8246 17.7083 27.6656 17.7083 27.4998V16.6665ZM18.9583 17.2915V26.8748H21.0417V21.6665C21.0417 21.0587 21.2831 20.4758 21.7129 20.0461C22.1426 19.6163 22.7255 19.3748 23.3333 19.3748C23.9411 19.3748 24.524 19.6163 24.9538 20.0461C25.3836 20.4758 25.625 21.0587 25.625 21.6665V26.8748H27.7083V20.3165C27.7083 18.7298 26.3242 17.4765 24.7333 17.6215C24.1868 17.6711 23.6514 17.8061 23.1467 18.0215L21.9133 18.5507C21.8182 18.5915 21.7144 18.6081 21.6113 18.5989C21.5082 18.5898 21.4089 18.5551 21.3225 18.4981C21.2361 18.4411 21.1652 18.3635 21.1162 18.2723C21.0671 18.1811 21.0415 18.0792 21.0417 17.9757V17.2915H18.9583Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-heading font-bold text-lg mb-6">
+              {t.footer.quickLinks}
+            </h4>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/about"
+                  className="text-background/70 hover:text-primary transition-colors"
+                >
+                  {t.header.about}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/news"
+                  className="text-background/70 hover:text-primary transition-colors"
+                >
+                  {t.header.news}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/interviews"
+                  className="text-background/70 hover:text-primary transition-colors"
+                >
+                  {t.header.interviews}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gallery"
+                  className="text-background/70 hover:text-primary transition-colors"
+                >
+                  {t.header.gallery}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-background/70 hover:text-primary transition-colors"
+                >
+                  {t.header.contact}
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-heading font-bold text-lg mb-6">
+              {t.footer.contactInfo}
+            </h4>
+            <ul className="space-y-3 text-background/70">
+              <li>{t.footer.address}</li>
+              <li>{t.footer.phone}</li>
+              <li className="pt-2">+91 7063762957</li>
+              <li>{t.footer.email}</li>
+            </ul>
+          </div>
+        </div>
+        <div className="border-t border-background/10 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-background/50 text-sm">{t.footer.copyright}</p>
+          <div className="flex items-center gap-2">
+            <span className="w-3 h-3 rounded-full bg-primary"></span>
+            <span className="w-3 h-3 rounded-full bg-background"></span>
+            <span className="w-3 h-3 rounded-full bg-accent"></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};

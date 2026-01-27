@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const News = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="news" className="py-20 py-40px margin-bottom-350px">
       <div className="container mx-auto px-4">
@@ -8,22 +13,20 @@ const News = () => {
           <div className="w-[517px] w-mobile-100-perc inline-flex flex-col justify-start items-start gap-2 mobile-center">
             <div className="px-4 py-2 bg-[#ff6600]/10 rounded-full inline-flex justify-center items-center gap-2.5">
               <div className="text-center justify-center text-[#ff6600] text-sm font-medium font-['Mukta'] leading-5">
-                Stay Updated
+                {t.home.news.badge}
               </div>
             </div>
             <div className="self-stretch justify-center text-[#1a1a1a] text-[44px] font-semibold font-['Open_Sans'] text-mobile-32">
-              Latest Updates
+              {t.home.news.title}
             </div>
           </div>
           <div className="w-[499px] w-mobile-100-perc inline-flex flex-col justify-start items-start gap-6  mobile-center">
             <div className="self-stretch justify-start text-[#364153] text-lg font-normal font-['Mukta'] leading-7 text-16px">
-              Stay informed about ongoing development works, constituency
-              initiatives, public meetings, and important announcements from
-              Khanakul
+              {t.home.news.description}
             </div>
             <Link href="/interviews">
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-md px-8 text-base">
-                View All News
+                {t.home.news.viewAllButton}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -56,13 +59,12 @@ const News = () => {
             <div className="w-[432px] w-mobile-100-perc flex flex-col justify-start items-start gap-2">
               <div className="w-[287px] h-5 relative">
                 <div className="left-0 top-[-1.50px] absolute justify-start text-[#ff6a00] text-base font-bold font-['Open_Sans'] leading-5">
-                  January 18, 2026
+                  {t.home.news.articles.main.date}
                 </div>
               </div>
               <div className="self-stretch flex flex-col justify-start items-start gap-1.5">
                 <div className="w-[589px] w-mobile-100-perc justify-center text-[#1a1a1a] text-lg font-semibold font-['Open_Sans'] leading-7 text-16px">
-                  Hon’ble Prime Minister Narendra Modi Attends Poriborton
-                  Sankalpa Sabha in Singur
+                  {t.home.news.articles.main.title}
                 </div>
               </div>
             </div>
@@ -78,13 +80,12 @@ const News = () => {
               <div className="w-[532px] w-mobile-100-perc flex flex-col justify-start items-start gap-2">
                 <div className="w-[287px] h-5 relative">
                   <div className="left-0 top-[-1.50px] absolute justify-start text-[#ff6a00] text-base font-bold font-['Open_Sans'] leading-5">
-                    January 17, 2026
+                    {t.home.news.articles.second.date}
                   </div>
                 </div>
                 <div className="self-stretch flex flex-col justify-start items-start gap-1.5">
                   <div className="w-[548px] w-mobile-100-perc justify-center text-[#1a1a1a] text-lg font-semibold font-['Open_Sans'] leading-7 text-16px">
-                    Celebrating Education &amp; Legacy at Balai Chak High
-                    School, Chingra
+                    {t.home.news.articles.second.title}
                   </div>
                 </div>
               </div>
@@ -99,12 +100,12 @@ const News = () => {
               <div className="w-[432px] w-mobile-100-perc flex flex-col justify-start items-start gap-2">
                 <div className="w-[287px] h-5 relative">
                   <div className="left-0 top-[-1.50px] absolute justify-start text-[#ff6a00] text-base font-bold font-['Open_Sans'] leading-5">
-                    January 12, 2026
+                    {t.home.news.articles.third.date}
                   </div>
                 </div>
                 <div className="self-stretch flex flex-col justify-start items-start gap-1.5">
                   <div className="w-[419px]  w-mobile-100-perc justify-center text-[#1a1a1a] text-lg font-semibold font-['Open_Sans'] leading-7 text-16px">
-                    Run For Youth: Khanakul’s Young Energy on the Streets
+                    {t.home.news.articles.third.title}
                   </div>
                 </div>
               </div>
@@ -117,3 +118,4 @@ const News = () => {
 };
 
 export default News;
+
