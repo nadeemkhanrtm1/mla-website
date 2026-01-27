@@ -41,7 +41,7 @@ const FilterButton: React.FC<FilterButtonProps> = ({
 const Gallery = () => {
   const { t } = useLanguage();
 
-  const defaultGalleryItems: GalleryItem[] = [
+  const defaultGalleryItems: GalleryItem[] = React.useMemo(() => [
     {
       id: 1,
       src: "/gallery_image_1.png",
@@ -126,7 +126,7 @@ const Gallery = () => {
       title: t.home.gallery.items[10].title,
       type: "photo",
     },
-  ];
+  ], [t]);
 
   const [isMobile, setIsMobile] = useState(false);
   const [activeFilter, setActiveFilter] = useState<"all" | "photo" | "video">(
@@ -149,6 +149,17 @@ const Gallery = () => {
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
+
+  // Update allItems when language changes
+  useEffect(() => {
+    if (activeFilter === "all") {
+      setAllItems(defaultGalleryItems);
+    } else if (activeFilter === "photo") {
+      setAllItems(defaultGalleryItems.filter((item) => item.type === "photo"));
+    } else if (activeFilter === "video") {
+      setAllItems(defaultGalleryItems.filter((item) => item.type === "video"));
+    }
+  }, [defaultGalleryItems, activeFilter]);
 
   const filters: Array<{ label: string; value: "all" | "photo" | "video" }> = [
     { label: t.home.gallery.filters.all, value: "all" },

@@ -7,15 +7,8 @@ import { Input } from "../component/ui/Input";
 import { Button } from "../component/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
-const categories = [
-  "All",
-  "Development",
-  "Infrastructure",
-  "Healthcare",
-  "Youth",
-  "Welfare",
-  "Education",
-];
+import { useLanguage } from "@/app/context/LanguageContext";
+
 
 const allNews = [
   {
@@ -88,9 +81,65 @@ const allNews = [
 ];
 
 const NewsAndUpdates = () => {
+  const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
   const [visibleCount, setVisibleCount] = useState(6);
+
+  // Static data for images and navigation
+  const newsMetadata = [
+    {
+      id: 1,
+      image: "/news_updates_ar_1.png",
+      featured: true,
+      navigation: "/news/celebrating-education-legacy-at-balai-chak-high-school-chingra",
+    },
+    {
+      id: 2,
+      image: "/news_updates_ar_2.png",
+      featured: true,
+      navigation: "/news/honble-prime-minister-narendra-modi-attends-poriborton-sankalpa",
+    },
+    {
+      id: 3,
+      image: "/news_updates_ar_3.png",
+      featured: false,
+      navigation: "/news/run-for-youth-khanakuls-young-energy-on-the-streets",
+    },
+    {
+      id: 4,
+      image: "/news_updates_ar_4.png",
+      featured: false,
+      navigation: "/news/listen-to-peoples-voices-in-khanakul",
+    },
+    {
+      id: 5,
+      image: "/news_updates_ar_5.png",
+      featured: false,
+      navigation: "/news/poriborton-sankalpa-sabha-at-chingra",
+    },
+  ];
+
+  // Merge translated articles with static metadata
+  const allNews = t.news.articles.map((article: any) => {
+    const metadata = newsMetadata.find((m) => m.id === article.id);
+    return {
+      ...article,
+      ...metadata,
+      content: "",
+      author: "",
+    };
+  });
+
+  const categories = [
+    { key: "All", label: t.news.categories.all },
+    { key: "Development", label: t.news.categories.development },
+    { key: "Infrastructure", label: t.news.categories.infrastructure },
+    { key: "Healthcare", label: t.news.categories.healthcare },
+    { key: "Youth", label: t.news.categories.youth },
+    { key: "Welfare", label: t.news.categories.welfare },
+    { key: "Education", label: t.news.categories.education },
+  ];
 
   const filteredNews = allNews.filter((news) => {
     const matchesCategory =
@@ -111,8 +160,8 @@ const NewsAndUpdates = () => {
   return (
     <>
       <MainBanner
-        bannerTitle="News & Updates"
-        subTitle="Stay informed about the latest developments, initiatives, and announcements from the constituency."
+        bannerTitle={t.news.banner.title}
+        subTitle={t.news.banner.subtitle}
       />
 
       {/* Filter Bar */}
@@ -127,7 +176,7 @@ const NewsAndUpdates = () => {
               />
 
               <Input
-                placeholder="Search news..."
+                placeholder={t.news.ui.searchPlaceholder}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10 bg-muted border-border"
@@ -139,15 +188,14 @@ const NewsAndUpdates = () => {
               <Filter className="w-5 h-5 text-muted-foreground flex-shrink-0" />
               {categories.map((category) => (
                 <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${
-                    selectedCategory === category
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary"
-                  }`}
+                  key={category.key}
+                  onClick={() => setSelectedCategory(category.key)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all ${selectedCategory === category.key
+                    ? "bg-primary text-primary-foreground"
+                    : "bg-muted text-muted-foreground hover:bg-primary/10 hover:text-primary"
+                    }`}
                 >
-                  {category}
+                  {category.label}
                 </button>
               ))}
             </div>
@@ -161,7 +209,7 @@ const NewsAndUpdates = () => {
             <div className="flex items-center gap-3 mb-8">
               <div className="w-1 h-8 bg-primary rounded-full" />
               <h2 className="text-2xl font-heading font-bold text-foreground">
-                Featured News
+                {t.news.ui.featuredNews}
               </h2>
             </div>
 
@@ -217,7 +265,7 @@ const NewsAndUpdates = () => {
                     </div>
                     <div className="inline-flex justify-start items-end gap-2">
                       <div className="flex items-center gap-2.5 text-center justify-center text-[#ff6600] text-base font-medium font-['Mukta'] leading-6">
-                        Read More{" "}
+                        {t.news.ui.readMore}{" "}
                         <ArrowRight className="w-4 h-4 inline-block" />
                       </div>
                     </div>
@@ -235,18 +283,18 @@ const NewsAndUpdates = () => {
             <div className="w-1 h-8 bg-accent rounded-full" />
             <h2 className="text-2xl font-heading font-bold text-foreground">
               {selectedCategory === "All"
-                ? "All News"
-                : `${selectedCategory} News`}
+                ? t.news.ui.allNews
+                : `${categories.find(c => c.key === selectedCategory)?.label} ${t.news.ui.categoryNews}`}
             </h2>
             <span className="ml-auto text-muted-foreground text-sm">
-              {filteredNews.length} articles found
+              {filteredNews.length} {t.news.ui.articlesFound}
             </span>
           </div>
 
           {filteredNews.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-muted-foreground text-lg">
-                No news found matching your criteria.
+                {t.news.ui.noNewsFound}
               </p>
               <Button
                 variant="outline"
@@ -256,7 +304,7 @@ const NewsAndUpdates = () => {
                   setSearchQuery("");
                 }}
               >
-                Clear Filters
+                {t.news.ui.clearFilters}
               </Button>
             </div>
           ) : (
@@ -313,7 +361,7 @@ const NewsAndUpdates = () => {
                       </div>
                       <div className="inline-flex justify-start items-end gap-2">
                         <div className="flex items-center gap-2.5 text-center justify-center text-[#ff6600] text-base font-medium font-['Mukta'] leading-6">
-                          Read More{" "}
+                          {t.news.ui.readMore}{" "}
                           <ArrowRight className="w-4 h-4 inline-block" />
                         </div>
                       </div>
@@ -331,12 +379,12 @@ const NewsAndUpdates = () => {
                     size="lg"
                     className="px-8"
                   >
-                    Load More News
+                    {t.news.ui.loadMore}
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                   <p className="text-sm text-muted-foreground mt-3">
-                    Showing {visibleNews.length} of {filteredNews.length}{" "}
-                    articles
+                    {t.news.ui.showing} {visibleNews.length} {t.news.ui.of} {filteredNews.length}{" "}
+                    {t.news.ui.articles}
                   </p>
                 </div>
               )}

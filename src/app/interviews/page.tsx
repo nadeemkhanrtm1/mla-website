@@ -1,98 +1,30 @@
+"use client";
 import MainBanner from "../component/main-banner/main-banner";
 import Link from "next/link";
+import { useLanguage } from "@/app/context/LanguageContext";
 
-const video_interviews = [
-  {
-    id: 1,
-    category: "Youtube",
-    date: "August 1, 2025",
-    title: "MLA Susanta Ghosh’s Vision for Khanakul, Hooghly",
-    duration: "07 mins",
-    youtubeEmbedCode: "mKqnMpVzYoQ",
-  },
-  {
-    id: 2,
-    category: "Youtube",
-    date: "February 13, 2025",
-    title:
-      "MLA Susanta Ghosh Leads Farmers’ Protest for Irrigation Water in Khanakul",
-    duration: "04 mins",
-    youtubeEmbedCode: "KYNTPXd4ZYI",
-  },
-  {
-    id: 3,
-    category: "Youtube",
-    date: "May 6, 2025",
-    title: "Susanta Ghosh Addresses Political Violence and Governance Concerns",
-    duration: "21 mins",
-    youtubeEmbedCode: "zMq87um5CNY",
-  },
-];
-
-const news_article_and_coverage = [
-  {
-    id: 1,
-    category: "Development",
-    title: "Major Drainage Infrastructure Project",
-    content: `Under the leadership of MLA Susanta Ghosh, a major drainage infrastructure project worth approximately ₹27 lakh was implemented in the Arambagh region through the BJP-led Panchayat Samiti.`,
-    newsBy: "Khanakul News",
-    articleLink: "major-drainage-infrastructure-project",
-  },
-  {
-    id: 2,
-    category: "Politics",
-    title:
-      "Youth Marathon Organised to Promote a Drug-Free and Healthy Society",
-    content: `On the occasion of National Youth Day, a large-scale Youth Marathon was organised in Khanakul under the guidance of MLA Susanta Ghosh, with the objective of promoting a drug-free,  community.`,
-    newsBy: "Khanakul News",
-    articleLink:
-      "youth-marathon-organised-to-promote-a-drug-free-and-healthy-society",
-  },
-  {
-    id: 3,
-    category: "Politics",
-    title:
-      "The Central Government’s road connectivity initiative for rural areas",
-    content: `In a significant step toward regional infrastructure development, MLA Susanta Ghosh held discussions with the Union Minister for Road Transport and Highways regarding the improvement of road.`,
-    newsBy: "Khanakul News",
-    articleLink:
-      "central-government-road-connectivity-initiative-for-rural-areas",
-  },
-  {
-    id: 4,
-    category: "Politics",
-    title: "Model Education  and Child Development Centres",
-    content: `A child development and education centre in Khanakul has been upgraded into a model learning institution, focusing on early childhood education, nutrition, and holistic development.`,
-    newsBy: "Khanakul News",
-    articleLink: "model-education-and-child-development-centres",
-  },
-  {
-    id: 5,
-    category: "Politics",
-    title: "BJP Organisational Strength and Victory Celebration",
-    content: `Following the Bharatiya Janata Party’s electoral victory in Delhi, party workers and supporters in Arambagh organised a celebration programme to mark the success and strengthen organisational.`,
-    newsBy: "Khanakul News",
-    articleLink: "bjp-organisational-strength-and-victory-celebration",
-  },
-];
+// YouTube embed codes (these don't change with language)
+const youtubeEmbedCodes = ["mKqnMpVzYoQ", "KYNTPXd4ZYI", "zMq87um5CNY"];
 
 const InterviewAndArticle = () => {
+  const { t } = useLanguage();
+
   return (
     <>
       <MainBanner
-        bannerTitle="Interviews & Articles"
-        subTitle="Stay updated with the latest interviews, media appearances, press coverage, and articles featuring Shri Susanta Ghosh"
+        bannerTitle={t.interviews.banner.title}
+        subTitle={t.interviews.banner.subtitle}
       />
       <section className="bg-muted py-15">
         <div className="container mx-auto flex justify-start items-center gap-3">
           <div className="w-1 h-8 bg-[#ff6600] rounded-full" />
           <div className="h-8 justify-center text-[#1a1a1a] text-2xl font-semibold font-['Open_Sans'] leading-8">
-            Video Interviews
+            {t.interviews.videoInterviews.heading}
           </div>
         </div>
 
         <div className="container mx-auto mt-8 flex flex-wrap gap-6">
-          {video_interviews?.map((video, index) => (
+          {t.interviews.videoInterviews.videos?.map((video: any, index: number) => (
             <div
               className="w-[411px] border rounded-xl"
               style={{ borderColor: "#FF6600" }}
@@ -100,7 +32,7 @@ const InterviewAndArticle = () => {
             >
               <iframe
                 height={278}
-                src={`https://www.youtube-nocookie.com/embed/${video.youtubeEmbedCode}`}
+                src={`https://www.youtube-nocookie.com/embed/${youtubeEmbedCodes[index]}`}
                 title="YouTube video player"
                 className="w-full rounded-tl-2xl rounded-tr-2xl"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -143,11 +75,11 @@ const InterviewAndArticle = () => {
         <div className="flex justify-start items-center gap-3">
           <div className="w-1 h-8 bg-[#ff6600] rounded-full" />
           <div className="h-8 justify-center text-[#1a1a1a] text-2xl font-semibold font-['Open_Sans'] leading-8">
-            News Articles & Coverage
+            {t.interviews.newsArticles.heading}
           </div>
         </div>
         <div className="flex flex-wrap gap-6 mt-8">
-          {news_article_and_coverage.map((news) => (
+          {t.interviews.newsArticles.articles.map((news: any) => (
             <Link
               href={"/interviews/" + news.articleLink}
               key={news.id}
@@ -173,12 +105,12 @@ const InterviewAndArticle = () => {
                 </div>
                 <div className="flex justify-start items-end gap-2 mt-6">
                   <div className="flex items-center gap-2.5 text-center justify-center text-[#ff6600] text-base font-medium font-['Mukta'] leading-6">
-                    {news.newsBy}
+                    {t.interviews.newsArticles.newsBy}
                   </div>
                 </div>
                 <div className="text-center flex items-center justify-center gap-3 mt-8">
                   <div className="text-center justify-center text-[#ff6600] text-base font-semibold font-['Open_Sans'] leading-5">
-                    Read Full Article
+                    {t.interviews.newsArticles.readFullArticle}
                   </div>
                   <svg
                     width="16"
