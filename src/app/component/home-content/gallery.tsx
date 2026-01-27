@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 interface GalleryItem {
   id: string;
@@ -25,66 +26,65 @@ const FilterButton: React.FC<FilterButtonProps> = ({
 }) => (
   <div
     onClick={onClick}
-    className={`cursor-pointer h-10 px-5 py-2.5 rounded-lg flex justify-center items-center gap-1.5 transition-all ${
-      isActive ? "bg-[#ff6600]" : "outline outline-1 outline-[#ff6600]"
-    }`}
+    className={`cursor-pointer h-10 px-5 py-2.5 rounded-lg flex justify-center items-center gap-1.5 transition-all ${isActive ? "bg-[#ff6600]" : "outline outline-1 outline-[#ff6600]"
+      }`}
   >
     <div
-      className={`text-center text-base font-semibold font-['Open_Sans'] ${
-        isActive ? "text-white" : "text-[#1a1a1a]"
-      }`}
+      className={`text-center text-base font-semibold font-['Open_Sans'] ${isActive ? "text-white" : "text-[#1a1a1a]"
+        }`}
     >
       {label}
     </div>
   </div>
 );
 
-const defaultGalleryItems: GalleryItem[] = [
-  {
-    id: "1",
-    src: "/gallery_image_1.png",
-    alt: "Public meeting with citizens",
-    title: "Education & Legacy at Balai Chak High School",
-    type: "photo",
-  },
-  {
-    id: "2",
-    src: "/gallery_video_1.mp4",
-    alt: "PM Modi at Poriborton Sankalpa Sabha in Singur",
-    title: "PM Modi at Poriborton Sankalpa Sabha in Singur",
-    type: "video",
-  },
-  {
-    id: "3",
-    src: "/gallery_video_2.mp4",
-    alt: "Run For Youth: Khanakul’s Young Energy",
-    title: "Run For Youth: Khanakul’s Young Energy",
-    type: "video",
-  },
-  {
-    id: "4",
-    src: "/gallery_image_2.png",
-    alt: "Courtyard meetings to hear Khanakul’s people",
-    title: "Courtyard meetings to hear Khanakul’s people",
-    type: "photo",
-  },
-  {
-    id: "5",
-    src: "/gallery_image_3.png",
-    alt: "It is an investment in Khanakul’s future.",
-    title: "It is an investment in Khanakul’s future.",
-    type: "photo",
-  },
-  {
-    id: "6",
-    src: "/gallery_image_4.png",
-    alt: "Khanakul is ready for change.",
-    title: "Khanakul is ready for change.",
-    type: "photo",
-  },
-];
-
 const Gallery = () => {
+  const { t } = useLanguage();
+
+  const defaultGalleryItems: GalleryItem[] = [
+    {
+      id: "1",
+      src: "/gallery_image_1.png",
+      alt: t.home.gallery.items[0].alt,
+      title: t.home.gallery.items[0].title,
+      type: "photo",
+    },
+    {
+      id: "2",
+      src: "/gallery_video_1.mp4",
+      alt: t.home.gallery.items[1].alt,
+      title: t.home.gallery.items[1].title,
+      type: "video",
+    },
+    {
+      id: "3",
+      src: "/gallery_video_2.mp4",
+      alt: t.home.gallery.items[2].alt,
+      title: t.home.gallery.items[2].title,
+      type: "video",
+    },
+    {
+      id: "4",
+      src: "/gallery_image_2.png",
+      alt: t.home.gallery.items[3].alt,
+      title: t.home.gallery.items[3].title,
+      type: "photo",
+    },
+    {
+      id: "5",
+      src: "/gallery_image_3.png",
+      alt: t.home.gallery.items[4].alt,
+      title: t.home.gallery.items[4].title,
+      type: "photo",
+    },
+    {
+      id: "6",
+      src: "/gallery_image_4.png",
+      alt: t.home.gallery.items[5].alt,
+      title: t.home.gallery.items[5].title,
+      type: "photo",
+    },
+  ];
   const [activeFilter, setActiveFilter] = useState<"all" | "photo" | "video">(
     "all",
   );
@@ -92,9 +92,9 @@ const Gallery = () => {
   const [allItems, setAllItems] = useState<GalleryItem[]>(defaultGalleryItems);
 
   const filters: Array<{ label: string; value: "all" | "photo" | "video" }> = [
-    { label: "All", value: "all" },
-    { label: "Photos", value: "photo" },
-    { label: "Videos", value: "video" },
+    { label: t.home.gallery.filters.all, value: "all" },
+    { label: t.home.gallery.filters.photos, value: "photo" },
+    { label: t.home.gallery.filters.videos, value: "video" },
   ];
 
   const handlerFilterClick = (filterValue: "all" | "photo" | "video") => () => {
@@ -113,15 +113,14 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-8 mb-24px">
           <span className="inline-block text-[#f60] bg-[rgba(255,102,0,0.1)] px-4 py-2 rounded-full text-sm mb-2 mukta-medium">
-            Photo Gallery
+            {t.home.gallery.badge}
           </span>
           <h2 className="text-[44px] leading-15 text-foreground mb-4 open-sans-semibold-normal text-mobile-32">
-            Recent Events &amp;{" "}
-            <span className="text-gradient">Public Interaction</span>
+            {t.home.gallery.title}{" "}
+            <span className="text-gradient">{t.home.gallery.titleHighlight}</span>
           </h2>
           <p className="text-lg text-muted-foreground mukta-regular text-16px">
-            Glimpses of our continuous efforts to connect with and serve the
-            people.
+            {t.home.gallery.description}
           </p>
         </div>
 

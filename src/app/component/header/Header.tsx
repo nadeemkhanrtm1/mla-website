@@ -6,18 +6,21 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Button } from "../ui/Button";
 import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "News & Updates", href: "/news" },
-  { label: "Interviews & Articles", href: "/interviews" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Contact", href: "/contact" },
-];
+import { useLanguage } from "@/app/context/LanguageContext";
+import { LanguageSwitcher } from "../LanguageSwitcher";
 
 const Header = () => {
   const pathname = usePathname();
+  const { t } = useLanguage();
+
+  const navLinks = [
+    { label: t.header.home, href: "/" },
+    { label: t.header.about, href: "/about" },
+    { label: t.header.news, href: "/news" },
+    { label: t.header.interviews, href: "/interviews" },
+    { label: t.header.gallery, href: "/gallery" },
+    { label: t.header.contact, href: "/contact" },
+  ];
 
   const isActive = (href: string) => {
     if (href === "/") {
@@ -52,44 +55,44 @@ const Header = () => {
             <div className={styles.logoCircle}>
               <span className={styles.logoM}>M</span>
             </div>
-            <span className={styles.logoText}>MLA Office</span>
+            <span className={styles.logoText}>{t.header.mlaOffice}</span>
           </div>
           <nav className={styles.nav}>
             <Link href="/" className={isActive("/") ? styles.activeNav : ""}>
-              Home
+              {t.header.home}
             </Link>
             <Link
               href="/about"
               className={isActive("/about") ? styles.activeNav : ""}
             >
-              About
+              {t.header.about}
             </Link>
             <Link
               href="/news"
               className={isActive("/news") ? styles.activeNav : ""}
             >
-              News & Updates
+              {t.header.news}
             </Link>
             <Link
               href="/interviews"
               className={isActive("/interviews") ? styles.activeNav : ""}
             >
-              Interviews & Articles
+              {t.header.interviews}
             </Link>
             <Link
               href="/gallery"
               className={isActive("/gallery") ? styles.activeNav : ""}
             >
-              Gallery
+              {t.header.gallery}
             </Link>
             <Link
               href="/contact"
               className={isActive("/contact") ? styles.activeNav : ""}
             >
-              Contact Us
+              {t.header.contact}
             </Link>
           </nav>
-          <button className={styles.joinBtn}>Join Now</button>
+          <button className={styles.joinBtn}>{t.header.joinNow}</button>
 
           <button
             className="lg:hidden p-2 text-foreground"
@@ -116,11 +119,13 @@ const Header = () => {
               <MobileNavItem key={link.href} link={link} />
             ))}
             <Button className="mt-4" size="lg">
-              Join Now
+              {t.header.joinNow}
             </Button>
           </nav>
         </div>
       )}
+
+      <LanguageSwitcher/>
     </>
   );
 };

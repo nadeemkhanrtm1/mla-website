@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const HeroContent = () => {
+  const { t } = useLanguage();
+
   return (
     <>
       <section
@@ -16,22 +21,19 @@ const HeroContent = () => {
               className="px-4 mukta-medium text-background text-sm font-medium py-2 bg-background/20 backdrop-blur-sm rounded-full border border-background/30 animation-delay-200"
               style={{ animationDelay: "0.1s" }}
             >
-              Rising for the nation
+              {t.home.hero.badge}
             </span>
 
             <h1 className="lg:text-5xl text-[32px] max-w-[550px] lg:leading-16 leading-11 font-semibold open-sans-semibold-normal mb-4 mt-6">
-              Rising for the Nation. Fighting for Khanakul.
+              {t.home.hero.mainTitle}
             </h1>
 
             <p className="mb-6 max-w-[490px] mukta-medium lg:text-xl text-[16px]">
-              A strong grassroots leader committed to development, decisive
-              governance, and people-first politics. Working relentlessly to
-              ensure that the voice of Khanakul is heard, respected, and acted
-              upon.
+              {t.home.hero.description}
             </p>
 
             <button className="inline-flex cursor-pointer text-[#FF6600] items-center justify-center gap-2 whitespace-nowrap font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-background text-primary border-2 border-background hover:bg-transparent hover:text-background hover:border-background font-bold shadow-elevated lg:h-14 h-12 rounded-lg lg:px-10 px-5 lg:text-lg text-[16px] open-sans-semibold-normal">
-              Explore the Vision
+              {t.home.hero.ctaButton}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
