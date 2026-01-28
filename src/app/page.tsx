@@ -6,12 +6,18 @@ import JoinTheMoment from "./component/home-content/join-the-moment";
 import KeyIntui from "./component/home-content/key-ini";
 import News from "./component/home-content/news";
 import SecondartContent from "./component/home-content/secondary-content";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Welcome to the official website of Shri Susanta Ghosh, MLA from Khanakul constituency. A strong grassroots leader committed to development, decisive governance, and people-first politics.",
+};
 
 export default function App() {
   return (
     <>
       <HeroContent />
-      <SecondartContent />
+      <SecondartContent imageUrl="/mla-shri-rajesh-kumar.jpg"/>
       <AboutContent />
       <News />
       <KeyIntui />

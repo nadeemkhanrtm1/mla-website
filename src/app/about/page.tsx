@@ -8,6 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useLanguage } from "@/app/context/LanguageContext";
 
+// Note: Metadata cannot be exported from client components
+// The page metadata is handled by the parent layout
+
 
 
 function SampleNextArrow(props: any) {
@@ -123,7 +126,7 @@ const page = () => {
         pillText={t.about.banner.pill}
       />
 
-      <SecondartContent />
+      <SecondartContent imageUrl="mla-shri-rajesh-kumar2.jpg"/>
 
       <section className="my-30 my-40px container mx-auto mobile-bottom-space">
         <div>
