@@ -41,7 +41,7 @@ const JoinTheMoment = () => {
               </svg>
               {t.home.join.joinButton}
             </button>
-            <button className="text-16px inline-flex items-center justify-center gap-2 whitespace-nowrap font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-transparent text-background border-2 border-background hover:bg-background hover:text-primary font-bold h-14 rounded-lg px-10 text-lg">
+            {/* <button className="text-16px inline-flex items-center justify-center gap-2 whitespace-nowrap font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-transparent text-background border-2 border-background hover:bg-background hover:text-primary font-bold h-14 rounded-lg px-10 text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -57,7 +57,7 @@ const JoinTheMoment = () => {
                 <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
               </svg>
               {t.home.join.involvedButton}
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

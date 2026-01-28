@@ -111,6 +111,7 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
 
+<link rel="icon" href="/logo.svg" />
 
       </head>
       <body className="antialiased">

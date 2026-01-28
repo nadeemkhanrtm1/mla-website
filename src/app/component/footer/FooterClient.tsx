@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/app/context/LanguageContext";
+import Image from "next/image";
 
 export const FooterClient = () => {
   const { t } = useLanguage();
@@ -12,11 +13,16 @@ export const FooterClient = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-gradient-saffron flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-xl">
-                  M
-                </span>
-              </div>
+              <Link href="/">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center">
+                  <span className="text-primary-foreground font-heading font-bold text-xl">
+                    <Image src="/logo.svg" alt="Logo" width={50} height={50} unoptimized />
+                  </span>
+                </div>
+
+              </Link>
+
+              <Link href="/">
               <div>
                 <span className="font-heading font-bold text-xl block">
                   {t.footer.name}
@@ -25,6 +31,7 @@ export const FooterClient = () => {
                   {t.footer.title}
                 </span>
               </div>
+              </Link>
             </div>
             <p className="text-background/70 leading-relaxed mb-6 max-w-md">
               {t.footer.description}
