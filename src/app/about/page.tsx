@@ -116,6 +116,8 @@ const page = () => {
     beforeChange: (oldIndex: number, newIndex: number) => {
       setCurrentSlide(newIndex);
     },
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 
   return (
