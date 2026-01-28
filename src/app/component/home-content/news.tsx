@@ -113,7 +113,7 @@ const News = () => {
           </div>
         </div>
       </div>
-      <Link href="/interviews" className="lg:hidden block text-center w-full" style={{ marginTop: "350px" }}>
+      <Link href="/interviews" className="lg:hidden block text-center w-full" style={{ marginTop: "400px" }}>
         <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground h-12 rounded-md px-8 text-base">
           {t.home.news.viewAllButton}
           <svg
