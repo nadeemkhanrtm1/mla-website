@@ -8,6 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useLanguage } from "@/app/context/LanguageContext";
 
+// Note: Metadata cannot be exported from client components
+// The page metadata is handled by the parent layout
+
 
 
 function SampleNextArrow(props: any) {
