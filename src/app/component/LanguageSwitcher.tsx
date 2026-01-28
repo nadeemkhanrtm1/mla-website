@@ -1,70 +1,33 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { Language, languageLabels } from "@/app/lib/translations";
-import { ChevronDown } from "lucide-react";
 
 export const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   const handleLanguageChange = (lang: Language) => {
     setLanguage(lang);
-    setIsOpen(false);
   };
 
   return (
-    <div ref={dropdownRef} className="fixed -right-5 top-1/2 z-100">
-      {/* Dropdown Button */}
-      <div
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-20 overflow-hidden text-ellipsis flex transform -rotate-90 items-center justify-between gap-2 px-4 py-2 bg-[#f60] text-white rounded-lg font-medium text-sm transition-colors shadow-lg cursor-pointer"
-        aria-label="Toggle language selector"
-        aria-expanded={isOpen}
-      >
-        <span className="w-[70%]">{languageLabels[language]}</span>
-        <ChevronDown
-          size={16}
-          className={`transition-transform ${isOpen ? "rotate-270deg" : "rotate-90deg"}`}
-        />
-      </div>
-
-      {/* Dropdown Menu */}
-      {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-xl overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-          {(["en", "hi", "bn"] as Language[]).map((lang) => (
-            <button
-              key={lang}
-              onClick={() => handleLanguageChange(lang)}
-              className={`w-full text-left px-4 py-3 text-sm font-medium transition-colors ${
-                language === lang
-                  ? "bg-blue-100 text-blue-700 border-l-4 border-blue-600"
-                  : "text-gray-700 hover:bg-gray-100"
+    <div className="fixed -right-5 top-1/2 -translate-y-1/2 z-100">
+      {/* Language Column */}
+      <div className="flex flex-col gap-1 origin-center">
+        {(["en","hi", "bn"] as Language[]).map((lang) => (
+          <div
+            key={lang}
+            onClick={() => handleLanguageChange(lang)}
+            className={`px-4 py-2 font-medium text-sm transition-all duration-300 rounded-lg ${language === lang
+                ? "bg-[#f60] text-white shadow-lg scale-105"
+                : "bg-white text-gray-700 hover:bg-gray-100 shadow-md"
               }`}
-              aria-label={`Select ${languageLabels[lang]}`}
-            >
-              {languageLabels[lang]}
-            </button>
-          ))}
-        </div>
-      )}
+            aria-label={`Select ${languageLabels[lang]}`}
+          >
+            {languageLabels[lang]}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

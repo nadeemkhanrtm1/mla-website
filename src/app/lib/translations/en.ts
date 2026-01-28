@@ -252,17 +252,17 @@ export const en = {
         {
           name: "Susanta Ghosh",
           year: "2015",
-          description: "Served as a full-time party worker in Katwa Assembly and Vice President, BJP Yuva Morcha, Hooghly District, leading youth mobilisation and supporting district-level organisation and activities",
+          description: "Served as a Purnokalin Karyakarta  Vistarak in Katwa Assembly and Vice President, BJP Yuva Morcha, Hooghly District, leading youth mobilisation and supporting district-level organisation and activities",
         },
         {
           name: "Susanta Ghosh",
           year: "2016",
-          description: "Full-Time Party Worker, Katwa Assembly Continued organisational work in Katwa Assembly, strengthening booth-level and grassroots party structure.",
+          description: "Purnokalin Karyakarta  Vistarak, Katwa Assembly Continued organisational work in Katwa Assembly, strengthening booth-level and grassroots party structure.",
         },
         {
           name: "Susanta Ghosh",
           year: "2017",
-          description: "Full-Time Party Worker, Uluberia & Sabang Assembly Worked as a full-time party worker in Uluberia and Sabang Assembly constituencies, focusing on organisational building and election-related activities.",
+          description: "Purnokalin Karyakarta  Vistarak, Uluberia & Sabang Assembly Worked as a Purnokalin Karyakarta  Vistarak in Uluberia and Sabang Assembly constituencies, focusing on organisational building and election-related activities.",
         },
         {
           name: "Susanta Ghosh",
@@ -272,7 +272,7 @@ export const en = {
         {
           name: "Susanta Ghosh",
           year: "2019",
-          description: "Full-Time Party Worker, Barrackpore Assembly Worked as a full-time party worker in Barrackpore Assembly constituency, focusing on election strategy and organisational activities.",
+          description: "Purnokalin Karyakarta  Vistarak, Barrackpore Assembly Worked as a Purnokalin Karyakarta  Vistarak in Barrackpore Assembly constituency, focusing on election strategy and organisational activities.",
         },
         {
           name: "Susanta Ghosh",
