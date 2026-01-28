@@ -52,14 +52,16 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <div className={styles.inner}>
-          <div className={styles.logoSection}>
-            <div className={styles.logoCircle}>
-              <span className={styles.logoM}>
-                <Image src="/logo.svg" alt="Logo" width={50} height={50} unoptimized />
-              </span>
+          <Link href="/" className="cursor-pointer">
+            <div className={styles.logoSection}>
+              <div className={styles.logoCircle}>
+                <span className={styles.logoM}>
+                  <Image src="/logo.svg" alt="Logo" width={50} height={50} unoptimized />
+                </span>
+              </div>
+              <span className={styles.logoText}>{t.header.mlaOffice}</span>
             </div>
-            <span className={styles.logoText}>{t.header.mlaOffice}</span>
-          </div>
+          </Link>
           <nav className={styles.nav}>
             <Link href="/" className={isActive("/") ? styles.activeNav : ""}>
               {t.header.home}

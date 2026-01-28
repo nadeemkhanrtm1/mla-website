@@ -542,6 +542,6 @@ The celebration reflected the increasing political awareness and participation o
     phone: "Phone",
     email: "Email",
     followUs: "Follow Us",
-    copyright: "© 2024 MLA Office. All rights reserved.",
+    copyright: "© 2026 Susanta Ghosh. All rights reserved. | Managed by Speed Up",
   },
 };
