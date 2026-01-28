@@ -37,7 +37,7 @@ const SecondartContent = () => {
       <div className="container mx-auto lg:px-4">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="relative animate-slide-in-left about-main-container">
-            <div className="relative rounded-2xl overflow-hidden shadow-elevated">
+            <div className="relative rounded-2xl overflow-hidden shadow-elevated" style={{ aspectRatio: "530/603" }}>
               <img
                 src="/mla-shri-rajesh-kumar.jpg"
                 alt="MLA Shri Rajesh Kumar"
