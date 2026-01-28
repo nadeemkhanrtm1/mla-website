@@ -18,7 +18,7 @@ export const LanguageSwitcher = () => {
           <div
             key={lang}
             onClick={() => handleLanguageChange(lang)}
-            className={`px-4 py-2 font-medium text-sm transition-all duration-300 rounded-lg ${language === lang
+            className={`cursor-pointer px-4 py-2 font-medium text-sm transition-all duration-300 rounded-lg ${language === lang
                 ? "bg-[#f60] text-white shadow-lg scale-105"
                 : "bg-white text-gray-700 hover:bg-gray-100 shadow-md"
               }`}
