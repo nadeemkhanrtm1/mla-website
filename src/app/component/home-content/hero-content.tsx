@@ -54,6 +54,9 @@ const HeroContent = () => {
             src="/hero_image.png"
             alt="Hero Image"
             className="w-[477px] h-[630px] relative -bottom-16 hidden lg:block"
+            style={{
+              aspectRatio: "53 / 70",
+            }}
             width={100}
             height={100}
             unoptimized
