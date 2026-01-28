@@ -126,7 +126,7 @@ const page = () => {
         pillText={t.about.banner.pill}
       />
 
-      <SecondartContent />
+      <SecondartContent imageUrl="mla-shri-rajesh-kumar2.jpg"/>
 
       <section className="my-30 my-40px container mx-auto mobile-bottom-space">
         <div>

@@ -4,7 +4,7 @@ import { useLanguage } from "@/app/context/LanguageContext";
 import AnimatedNumber from "react-animated-number";
 import { useState, useEffect, useRef } from "react";
 
-const SecondartContent = () => {
+const SecondartContent = ({ imageUrl }: { imageUrl: string }) => {
   const { t } = useLanguage();
   const [isVisible, setIsVisible] = useState(false);
   const statsRef = useRef<HTMLDivElement>(null);
@@ -39,7 +39,7 @@ const SecondartContent = () => {
           <div className="relative animate-slide-in-left about-main-container">
             <div className="relative rounded-2xl overflow-hidden shadow-elevated" style={{ aspectRatio: "530/603" }}>
               <img
-                src="/mla-shri-rajesh-kumar.jpg"
+                src={imageUrl || "/mla-shri-rajesh-kumar.jpg"}
                 alt="MLA Shri Rajesh Kumar"
                 className="w-full h-full object-cover"
               />

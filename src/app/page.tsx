@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <HeroContent />
-      <SecondartContent />
+      <SecondartContent imageUrl="/mla-shri-rajesh-kumar.jpg"/>
       <AboutContent />
       <News />
       <KeyIntui />
