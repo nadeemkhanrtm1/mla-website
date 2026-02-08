@@ -97,7 +97,9 @@ const Header = () => {
               {t.header.contact}
             </Link>
           </nav>
-          <button className={styles.joinBtn}>{t.header.joinNow}</button>
+          <a href="https://whatsapp.com/channel/0029Vb7mo4H7YSd1yLblW60b" target="_blank" rel="noopener noreferrer">
+            <button className={styles.joinBtn}>{t.header.joinNow}</button>
+          </a>
 
           <button
             className="lg:hidden p-2 text-foreground"
@@ -123,9 +125,11 @@ const Header = () => {
             {navLinks.map((link) => (
               <MobileNavItem key={link.href} link={link} />
             ))}
-            <Button className="mt-4" size="lg">
-              {t.header.joinNow}
-            </Button>
+            <a href="https://whatsapp.com/channel/0029Vb7mo4H7YSd1yLblW60b" target="_blank" rel="noopener noreferrer" className="w-full">
+              <Button className="mt-4 w-full" size="lg">
+                {t.header.joinNow}
+              </Button>
+            </a>
           </nav>
         </div>
       )}

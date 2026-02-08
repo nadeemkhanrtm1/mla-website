@@ -45,7 +45,7 @@ export const hi = {
         yearsLabel: "सक्रिय सार्वजनिक सेवा के वर्ष",
         initiatives: "80+",
         initiativesLabel: "विकास पहल और सार्वजनिक कार्यक्रम",
-        citizens: "05K",
+        citizens: "75K",
         citizensLabel: "सीधे प्रभावित नागरिक",
       },
     },

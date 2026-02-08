@@ -104,7 +104,7 @@ const SecondartContent = ({ imageUrl }: { imageUrl: string }) => {
                 <div className="font-semibold text-5xl text-32px leading-12 text-gradient">
                   <AnimatedNumber
                     value={isVisible ? parseInt(t.home.secondaryContent.stats.citizens.replace(/\D/g, '')) : 0}
-                    formatValue={(n: number) => "0" + n.toFixed(0) + 'K'}
+                    formatValue={(n: number) => n.toFixed(0) + 'K'}
                     duration={1000}
                   />
                 </div>

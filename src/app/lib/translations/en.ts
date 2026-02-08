@@ -44,7 +44,7 @@ export const en = {
         yearsLabel: "Years of Active Public Service",
         initiatives: "80+",
         initiativesLabel: "Development Initiatives & Public Programs",
-        citizens: "05K",
+        citizens: "75K",
         citizensLabel: "Citizens Directly Impacted",
       },
     },

@@ -21,7 +21,7 @@ const JoinTheMoment = () => {
             {t.home.join.description}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 mb-24px">
-            <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-background text-primary border-2 border-background hover:bg-transparent hover:text-background hover:border-background shadow-elevated h-14 rounded-lg px-10 text-lg open-sans-semibold-normal text-16px">
+            <a href="https://whatsapp.com/channel/0029Vb7mo4H7YSd1yLblW60b" className="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-background text-primary border-2 border-background hover:bg-transparent hover:text-background hover:border-background shadow-elevated h-14 rounded-lg px-10 text-lg open-sans-semibold-normal text-16px">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -40,7 +40,7 @@ const JoinTheMoment = () => {
                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
               </svg>
               {t.home.join.joinButton}
-            </button>
+            </a>
             {/* <button className="text-16px inline-flex items-center justify-center gap-2 whitespace-nowrap font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-transparent text-background border-2 border-background hover:bg-background hover:text-primary font-bold h-14 rounded-lg px-10 text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

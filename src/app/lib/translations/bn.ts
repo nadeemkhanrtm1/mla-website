@@ -43,7 +43,7 @@ export const bn = {
         yearsLabel: "সক্রিয় জনসেবার বছর",
         initiatives: "80+",
         initiativesLabel: "উন্নয়ন উদ্যোগ ও জনসাধারণের কর্মসূচি",
-        citizens: "05K",
+        citizens: "75K",
         citizensLabel: "সরাসরি প্রভাবিত নাগরিক",
       },
     },

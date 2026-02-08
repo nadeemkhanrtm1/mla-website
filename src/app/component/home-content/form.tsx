@@ -447,7 +447,7 @@ const Form = () => {
             </Link>
 
             <Link
-              href="https://www.youtube.com/@SusantaGhoshBJP"
+              href="https://whatsapp.com/channel/0029Vb7mo4H7YSd1yLblW60b"
               target="_blank"
               onMouseEnter={() => setHovered((h) => ({ ...h, whatsapp: true }))}
               onMouseLeave={() => setHovered((h) => ({ ...h, whatsapp: false }))}
