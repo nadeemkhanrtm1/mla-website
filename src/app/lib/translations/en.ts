@@ -52,7 +52,7 @@ export const en = {
       badge: "Vision & Mission",
       title: "Vision for a Stronger & Better",
       titleHighlight: "Constituency",
-      description: "Our vision is to create a developed, self-reliant, and inclusive Pursurah, where every citizen has access to opportunities, safety, and a dignified quality of life.",
+      description: "Our vision is to create a developed, self-reliant, and inclusive Khanakul, where every citizen has access to opportunities, safety, and a dignified quality of life.",
       cards: {
         development: {
           title: "Development for All",
@@ -92,7 +92,7 @@ export const en = {
       badge: "Our Work",
       title: "Key Initiatives &",
       titleHighlight: "Achievements",
-      description: "A snapshot of impactful initiatives undertaken to improve lives and strengthen infrastructure in the Pursurah constituency.",
+      description: "A snapshot of impactful initiatives undertaken to improve lives and strengthen infrastructure in the Khanakul constituency.",
       initiatives: [
         {
           title: "Road & Infrastructure",
@@ -292,15 +292,15 @@ export const en = {
       titleHighlight: "Vision & Mission",
       vision: {
         title: "Vision",
-        description: "To transform Pursurah into a model constituency through sustainable development, strong civic infrastructure, and active citizen participation — where every family has access to quality healthcare, education, clean water, and better roads.",
+        description: "To transform Khanakul into a model constituency through sustainable development, strong civic infrastructure, and active citizen participation — where every family has access to quality healthcare, education, clean water, and better roads.",
       },
       mission: {
         title: "Mission",
-        description: "To deliver inclusive and sustainable development in Pursurah by strengthening civic infrastructure, improving access to quality healthcare and education, ensuring clean water and safe roads, and empowering citizens to actively participate in shaping a transparent, progressive, and people-first constituency.",
+        description: "To deliver inclusive and sustainable development in Khanakul by strengthening civic infrastructure, improving access to quality healthcare and education, ensuring clean water and safe roads, and empowering citizens to actively participate in shaping a transparent, progressive, and people-first constituency.",
       },
     },
     quote: {
-      text: "My goal is to serve every citizen with honesty,\ndedication, and commitment. Together, we will build a stronger and progressive Pursurah where every family prospers.",
+      text: "My goal is to serve every citizen with honesty,\ndedication, and commitment. Together, we will build a stronger and progressive Khanakul where every family prospers.",
       name: "Shri Susanta Ghosh",
       title: "MLA, Khanakul",
       subtitle: "State Secretary, BJP West Bengal",
