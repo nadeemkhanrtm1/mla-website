@@ -32,7 +32,7 @@ const HeroContent = () => {
               {t.home.hero.description}
             </p>
 
-            <button className="inline-flex cursor-pointer text-[#FF6600] items-center justify-center gap-2 whitespace-nowrap font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-background text-primary border-2 border-background hover:bg-transparent hover:text-background hover:border-background font-bold shadow-elevated lg:h-14 h-12 rounded-lg lg:px-10 px-5 lg:text-lg text-[16px] open-sans-semibold-normal">
+            <a href="/about" className="inline-flex cursor-pointer text-[#FF6600] items-center justify-center gap-2 whitespace-nowrap font-heading ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-background text-primary border-2 border-background hover:bg-transparent hover:text-background hover:border-background font-bold shadow-elevated lg:h-14 h-12 rounded-lg lg:px-10 px-5 lg:text-lg text-[16px] open-sans-semibold-normal">
               {t.home.hero.ctaButton}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const HeroContent = () => {
               >
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
-            </button>
+            </a>
           </div>
           <Image
             src="/hero_image.png"

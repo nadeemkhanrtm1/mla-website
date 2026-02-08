@@ -24,6 +24,12 @@ const Form = () => {
     query: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
   const [hovered, setHovered] = useState({
     fb: false,
     x: false,
@@ -40,9 +46,49 @@ const Form = () => {
     }));
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("/api/contact-submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message: "Thank you! Your message has been sent successfully.",
+        });
+        // Reset form
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+          query: "",
+        });
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: data.error || "Something went wrong. Please try again.",
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Failed to send message. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
   return (
     <section id="form" className="my-30 my-40px">
@@ -167,12 +213,30 @@ const Form = () => {
               ></textarea>
             </div>
 
+            {submitStatus.type && (
+              <div
+                className={`col-span-2 p-4 rounded-lg ${submitStatus.type === "success"
+                    ? "bg-green-100 text-green-800"
+                    : "bg-red-100 text-red-800"
+                  }`}
+              >
+                {submitStatus.message}
+              </div>
+            )}
+
             <button
               type="submit"
-              className="col-span-2 w-full bg-[#FF6600] text-white py-3 rounded-xl margin-top-16px"
-              style={{ background: "#FF6600", marginTop: "24px" }}
+              disabled={isSubmitting}
+              className={`col-span-2 w-full py-3 rounded-xl margin-top-16px text-white ${isSubmitting
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-[#FF6600] hover:bg-[#e55a00]"
+                }`}
+              style={{
+                background: isSubmitting ? "#9ca3af" : "#FF6600",
+                marginTop: "24px",
+              }}
             >
-              {t.home.contact.form.submitButton}
+              {isSubmitting ? "Sending..." : t.home.contact.form.submitButton}
             </button>
           </form>
         </div>
@@ -383,7 +447,7 @@ const Form = () => {
             </Link>
 
             <Link
-              href="https://www.youtube.com/@SusantaGhoshBJP"
+              href="https://whatsapp.com/channel/0029Vb7mo4H7YSd1yLblW60b"
               target="_blank"
               onMouseEnter={() => setHovered((h) => ({ ...h, whatsapp: true }))}
               onMouseLeave={() => setHovered((h) => ({ ...h, whatsapp: false }))}
